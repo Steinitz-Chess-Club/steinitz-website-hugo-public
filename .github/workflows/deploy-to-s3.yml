@@ -27,8 +27,8 @@ jobs:
       # Checks-out this repository under $GITHUB_WORKSPACE, so the job can access it
       - name: "Checkout repo"
         uses: actions/checkout@v4
-      - name: "Remove hidden files and dirs"
-        run: find . -name ".*" -print0 | xargs -0 rm -rf
+      - name: "Remove hidden files and dirs recursively"
+        run: find . -name '.*' -exec rm -fr {} + 2>/dev/null
       - name: "Configure AWS Credentials"
         uses: aws-actions/configure-aws-credentials@v4.0.2
         with:
