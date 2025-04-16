@@ -1,0 +1,36 @@
+# Workflow for building and deploying a Hugo site to S3
+name: Deploy Hugo site to S3
+
+on:
+  # Runs on 'git push', targeting the default branch
+  push:
+    branches: ["main"]
+    
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+# Sets permissions of the GITHUB_TOKEN to allow deployment to S3
+permissions:
+  contents: read
+  id-token: write
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+# Deployment job
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Configure AWS Credentials"
+        uses: aws-actions/configure-aws-credentials@v4.0.2
+        with:
+          aws-region: ${{ vars.AWS_REGION }}
+          role-to-assume: arn:aws:iam::881490093474:role/SteinitzWebsite_S3Deployer # this will be the ARN of the role you created in the "Creating a Role for deployment" step.
+          role-session-name: GithubActions-SteinitzWebsite
+          mask-aws-account-id: true
+      - name: Sync to S3
+        id: deployment
+        run: aws s3 sync ./ s3://${{ vars.BUCKET_NAME }} --delete --cache-control max-age=31536000
