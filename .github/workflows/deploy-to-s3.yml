@@ -28,7 +28,7 @@ jobs:
       - name: "Checkout repo"
         uses: actions/checkout@v4
       - name: "Remove hidden files and dirs recursively"
-        run: find . -name '.*' -exec rm -fr {} \; 2>/dev/null
+        run: find . -name '.[a-zA-Z0-9]*' -exec rm -fr {} \;
       - name: "Configure AWS Credentials"
         uses: aws-actions/configure-aws-credentials@v4.0.2
         with:
