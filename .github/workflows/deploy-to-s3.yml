@@ -38,4 +38,4 @@ jobs:
           mask-aws-account-id: true          
       - name: Sync to S3
         id: deployment
-        run: aws s3 sync ./ s3://${{ vars.BUCKET_NAME }} --exclude ".*" --exclude "*/.*" --delete --cache-control max-age=31536000
+        run: aws s3 sync ./ s3://${{ vars.BUCKET_NAME }} --delete --cache-control max-age=31536000
