@@ -8,6 +8,10 @@ on:
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
   
 # Sets permissions of the GITHUB_TOKEN to allow deployment to S3
 permissions:
@@ -27,8 +31,12 @@ jobs:
       # Checks-out this repository under $GITHUB_WORKSPACE, so the job can access it
       - name: "Checkout repo"
         uses: actions/checkout@v4
-      - name: "Replace 'staging' Google tags with production equivalents"
+      - name: "Abort if any trace of development build is detected (it should be a staging build)."
+        uses: grep -r "localhost:1313" * && echo "Development build detected - should be staging build." && exit 1
+      - name: "Replace 'staging' Google tags with 'production' equivalents"
         run: find . -type f -exec sed -i~ 's/B3ECKP96EL/DPHXLK5VEW/g' '{}' '+'
+      - name: "Replace 'staging' URL with 'production' equivalent"
+        run: find . -type f -exec sed -i~ 's/test\.steinitzchessclub\.co\.za/www.steinitzchessclub.co.za/g' '{}' '+'
       - name: "Remove ~ suffixed temp files created as part of the above SED operation."
         run: find . -name "*~" -exec rm {} +
       - name: Remove hidden files and dirs recursively
