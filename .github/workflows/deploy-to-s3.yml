@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v4
       - name: "Abort if any trace of development build is detected (it should be a staging build)."
         run: |
-          num_occurrences=$(grep -c -r 'test' * | wc -l)
+          num_occurrences=$(grep -r 'test' * || true | wc -l)
           if [ "$num_occurrences" -gt "0" ]; then
             echo "num_occurrences: $num_occurrences"
           else
