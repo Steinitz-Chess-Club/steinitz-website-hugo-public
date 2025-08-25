@@ -35,7 +35,7 @@ jobs:
         run: |
           pwd
           cat sitemap.xml
-          grep local sitemap.xml
+          sed -n '/localhost/p' filename sitemap.xml
       - name: "Replace 'staging' Google tags with 'production' equivalents"
         run: find . -type f -exec sed -i~ 's/B3ECKP96EL/DPHXLK5VEW/g' '{}' '+'
       - name: "Replace 'staging' URL with 'production' equivalent"
