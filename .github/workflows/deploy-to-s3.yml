@@ -36,6 +36,7 @@ jobs:
           num_occurrences=$((grep -r 'localhost:1313' * || true) | wc -l)
           if [ "$num_occurrences" -gt "0" ]; then
             echo "::error::Development build detected. To fix this, commit to public dir/repo after issuing 'hugo -e staging' command."
+            exit 1
           fi
       - name: "Replace 'staging' Google tags with 'production' equivalents"
         run: find . -type f -exec sed -i~ 's/B3ECKP96EL/DPHXLK5VEW/g' '{}' '+'
