@@ -32,7 +32,11 @@ jobs:
       - name: "Checkout repo"
         uses: actions/checkout@v4
       - name: "Abort if any trace of development build is detected (it should be a staging build)."
-        run: grep 'localhost:1313' sitemap.xml
+        run: |
+          num_occurrences=$((grep -r 'localhost:1313' * || true) | wc -l)
+          if [ "$num_occurrences" -gt "0" ]; then
+            echo "::error::Development build detected. To fix this, commit to public dir/repo after issuing 'hugo -e staging' command."
+          fi
       - name: "Replace 'staging' Google tags with 'production' equivalents"
         run: find . -type f -exec sed -i~ 's/B3ECKP96EL/DPHXLK5VEW/g' '{}' '+'
       - name: "Replace 'staging' URL with 'production' equivalent"
@@ -52,7 +56,7 @@ jobs:
           mask-aws-account-id: true          
       - name: "Sync to S3"
         id: deployment
-        run: aws s3 sync ./ s3://${{ vars.BUCKET_NAME }} --delete --cache-control max-age=31536000
+        run: blahaws s3 sync ./ s3://${{ vars.BUCKET_NAME }} --delete --cache-control max-age=31536000
       - name: "Cloudfront Invalidation"
         id: flushcache
-        run: aws cloudfront create-invalidation --distribution-id ${{ vars.CF_DISTRIBUTION_ID }} --paths "/*"
+        run: blahaws cloudfront create-invalidation --distribution-id ${{ vars.CF_DISTRIBUTION_ID }} --paths "/*"
