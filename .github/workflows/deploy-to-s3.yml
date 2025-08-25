@@ -34,7 +34,7 @@ jobs:
       - name: "Abort if any trace of development build is detected (it should be a staging build)."
         run: |
           sed -n '/test/p' sitemap.xml | wc -l
-          num_occurrences=$(grep -c -r 'test' *)
+          num_occurrences=$(grep -r 'test' * | wc -l)
           echo $num_occurrences
       - name: "Replace 'staging' Google tags with 'production' equivalents"
         run: find . -type f -exec sed -i~ 's/B3ECKP96EL/DPHXLK5VEW/g' '{}' '+'
@@ -55,7 +55,7 @@ jobs:
           mask-aws-account-id: true          
       - name: "Sync to S3"
         id: deployment
-        run: aws s3 sync ./ s3://${{ vars.BUCKET_NAME }} --delete --cache-control max-age=31536000
+        run: blahaws s3 sync ./ s3://${{ vars.BUCKET_NAME }} --delete --cache-control max-age=31536000
       - name: "Cloudfront Invalidation"
         id: flushcache
-        run: aws cloudfront create-invalidation --distribution-id ${{ vars.CF_DISTRIBUTION_ID }} --paths "/*"
+        run: blahaws cloudfront create-invalidation --distribution-id ${{ vars.CF_DISTRIBUTION_ID }} --paths "/*"
