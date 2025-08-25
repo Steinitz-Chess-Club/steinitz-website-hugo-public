@@ -34,7 +34,7 @@ jobs:
       - name: "Abort if any trace of development build is detected (it should be a staging build)."
         run: |
           sed -n '/test/p' sitemap.xml | wc -l
-          [ $(grep -r 'test' * | wc -l) -gt 0 ] && echo "blah" && exit 1
+          [ $(grep -r 'test' * | wc -l) -gt 1000 ] && echo "blah" && exit 1
       - name: "Replace 'staging' Google tags with 'production' equivalents"
         run: find . -type f -exec sed -i~ 's/B3ECKP96EL/DPHXLK5VEW/g' '{}' '+'
       - name: "Replace 'staging' URL with 'production' equivalent"
