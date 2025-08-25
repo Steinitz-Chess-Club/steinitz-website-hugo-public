@@ -32,7 +32,7 @@ jobs:
       - name: "Checkout repo"
         uses: actions/checkout@v4
       - name: "Abort if any trace of development build is detected (it should be a staging build)."
-        run: grep -qr 'localhost:1313' * 
+        run: /bin/grep -qr 'localhost:1313' * 
       - name: "Replace 'staging' Google tags with 'production' equivalents"
         run: find . -type f -exec sed -i~ 's/B3ECKP96EL/DPHXLK5VEW/g' '{}' '+'
       - name: "Replace 'staging' URL with 'production' equivalent"
