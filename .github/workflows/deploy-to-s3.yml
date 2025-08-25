@@ -35,7 +35,9 @@ jobs:
         run: |
           num_occurrences=$(grep -r 'testttt' * | wc -l)
           if [ "$num_occurrences" -gt "0" ]; then
-            echo $num_occurrences
+            echo "num_occurrences: $num_occurrences"
+          else
+            echo "no occurrences"
           fi
       - name: "Replace 'staging' Google tags with 'production' equivalents"
         run: find . -type f -exec sed -i~ 's/B3ECKP96EL/DPHXLK5VEW/g' '{}' '+'
