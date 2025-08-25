@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Steinitz Chess Club</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://test.steinitzchessclub.co.za/tags/</link>
     <description>Recent content in Tags on Steinitz Chess Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://test.steinitzchessclub.co.za/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nextjs</title>
-      <link>http://localhost:1313/tags/nextjs/</link>
+      <link>https://test.steinitzchessclub.co.za/tags/nextjs/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nextjs/</guid>
+      <guid>https://test.steinitzchessclub.co.za/tags/nextjs/</guid>
       <description></description>
     </item>
     <item>
       <title>Silicon</title>
-      <link>http://localhost:1313/tags/silicon/</link>
+      <link>https://test.steinitzchessclub.co.za/tags/silicon/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/silicon/</guid>
+      <guid>https://test.steinitzchessclub.co.za/tags/silicon/</guid>
       <description></description>
     </item>
     <item>
       <title>Software</title>
-      <link>http://localhost:1313/tags/software/</link>
+      <link>https://test.steinitzchessclub.co.za/tags/software/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/software/</guid>
+      <guid>https://test.steinitzchessclub.co.za/tags/software/</guid>
       <description></description>
     </item>
     <item>
       <title>Tailwind</title>
-      <link>http://localhost:1313/tags/tailwind/</link>
+      <link>https://test.steinitzchessclub.co.za/tags/tailwind/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tailwind/</guid>
+      <guid>https://test.steinitzchessclub.co.za/tags/tailwind/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
-      <link>http://localhost:1313/tags/technology/</link>
+      <link>https://test.steinitzchessclub.co.za/tags/technology/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/technology/</guid>
+      <guid>https://test.steinitzchessclub.co.za/tags/technology/</guid>
       <description></description>
     </item>
   </channel>

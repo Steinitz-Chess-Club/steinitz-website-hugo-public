@@ -2,154 +2,154 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/contact-us/</loc>
+    <loc>https://test.steinitzchessclub.co.za/contact-us/</loc>
     <lastmod>2025-04-23T15:39:51+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/achievements/</loc>
+    <loc>https://test.steinitzchessclub.co.za/achievements/</loc>
     <lastmod>2025-04-23T15:39:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://test.steinitzchessclub.co.za/</loc>
     <lastmod>2025-04-23T15:39:40+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="af"
-                href="http://localhost:1313/af/"
+                href="https://test.steinitzchessclub.co.za/af/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/"
+                href="https://test.steinitzchessclub.co.za/"
                 />
   </url><url>
-    <loc>http://localhost:1313/english/</loc>
+    <loc>https://test.steinitzchessclub.co.za/english/</loc>
     <lastmod>2025-04-23T15:39:40+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/history/</loc>
+    <loc>https://test.steinitzchessclub.co.za/history/</loc>
     <lastmod>2025-04-23T15:37:56+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/development/</loc>
+    <loc>https://test.steinitzchessclub.co.za/development/</loc>
     <lastmod>2025-04-23T15:33:14+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/application/</loc>
+    <loc>https://test.steinitzchessclub.co.za/categories/application/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/architecture/</loc>
+    <loc>https://test.steinitzchessclub.co.za/categories/architecture/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://test.steinitzchessclub.co.za/blog/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/english/blog/</loc>
+    <loc>https://test.steinitzchessclub.co.za/english/blog/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="af"
-                href="http://localhost:1313/af/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/categories/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/data/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/post-1/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/post-2/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/post-3/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/post-4/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/english/blog/post-1/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/english/blog/post-2/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/english/blog/post-3/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/english/blog/post-4/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/nextjs/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/silicon/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/software/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/software/</loc>
-    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://test.steinitzchessclub.co.za/categories/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="af"
-                href="http://localhost:1313/af/tags/"
+                href="https://test.steinitzchessclub.co.za/af/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/tags/"
+                href="https://test.steinitzchessclub.co.za/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/tailwind/</loc>
+    <loc>https://test.steinitzchessclub.co.za/categories/data/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/technology/</loc>
+    <loc>https://test.steinitzchessclub.co.za/blog/post-1/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/technology/</loc>
+    <loc>https://test.steinitzchessclub.co.za/blog/post-2/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://test.steinitzchessclub.co.za/blog/post-3/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/english/authors/</loc>
+    <loc>https://test.steinitzchessclub.co.za/blog/post-4/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://test.steinitzchessclub.co.za/english/blog/post-1/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/english/contact/</loc>
+    <loc>https://test.steinitzchessclub.co.za/english/blog/post-2/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/english/pages/elements/</loc>
+    <loc>https://test.steinitzchessclub.co.za/english/blog/post-3/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/elements/</loc>
+    <loc>https://test.steinitzchessclub.co.za/english/blog/post-4/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://test.steinitzchessclub.co.za/tags/nextjs/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/english/about/</loc>
+    <loc>https://test.steinitzchessclub.co.za/tags/silicon/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/john-doe/</loc>
+    <loc>https://test.steinitzchessclub.co.za/categories/software/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/english/authors/john-doe/</loc>
+    <loc>https://test.steinitzchessclub.co.za/tags/software/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/</loc>
+    <loc>https://test.steinitzchessclub.co.za/tags/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="af"
+                href="https://test.steinitzchessclub.co.za/af/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://test.steinitzchessclub.co.za/tags/"
+                />
   </url><url>
-    <loc>http://localhost:1313/english/pages/privacy-policy/</loc>
+    <loc>https://test.steinitzchessclub.co.za/tags/tailwind/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/privacy-policy/</loc>
+    <loc>https://test.steinitzchessclub.co.za/categories/technology/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/sam-wilson/</loc>
+    <loc>https://test.steinitzchessclub.co.za/tags/technology/</loc>
+    <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/english/authors/sam-wilson/</loc>
+    <loc>https://test.steinitzchessclub.co.za/authors/</loc>
   </url><url>
-    <loc>http://localhost:1313/sections/</loc>
+    <loc>https://test.steinitzchessclub.co.za/english/authors/</loc>
   </url><url>
-    <loc>http://localhost:1313/authors/william-jacob/</loc>
+    <loc>https://test.steinitzchessclub.co.za/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/english/authors/william-jacob/</loc>
+    <loc>https://test.steinitzchessclub.co.za/english/contact/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/english/pages/elements/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/elements/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/about/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/english/about/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/authors/john-doe/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/english/authors/john-doe/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/pages/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/english/pages/privacy-policy/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/privacy-policy/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/authors/sam-wilson/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/english/authors/sam-wilson/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/sections/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/authors/william-jacob/</loc>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/english/authors/william-jacob/</loc>
   </url>
 </urlset>

@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/af/categories/</loc>
+    <loc>https://test.steinitzchessclub.co.za/af/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/categories/"
+                href="https://test.steinitzchessclub.co.za/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="af"
-                href="http://localhost:1313/af/categories/"
+                href="https://test.steinitzchessclub.co.za/af/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/af/</loc>
+    <loc>https://test.steinitzchessclub.co.za/af/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/"
+                href="https://test.steinitzchessclub.co.za/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="af"
-                href="http://localhost:1313/af/"
+                href="https://test.steinitzchessclub.co.za/af/"
                 />
   </url><url>
-    <loc>http://localhost:1313/af/tags/</loc>
+    <loc>https://test.steinitzchessclub.co.za/af/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/tags/"
+                href="https://test.steinitzchessclub.co.za/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="af"
-                href="http://localhost:1313/af/tags/"
+                href="https://test.steinitzchessclub.co.za/af/tags/"
                 />
   </url>
 </urlset>
