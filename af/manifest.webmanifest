@@ -1,0 +1,15 @@
+{
+  "name": "Steinitz Chess Club",
+  "short_name": "Steinitz Chess Club",
+  "lang": "af",
+  "display": "fullscreen",
+  "orientation" : "portrait",
+  "start_url": "http://localhost:1313/?utm_source=web_app_manifest",
+  "background_color": "#fff",
+  "theme_color": "#000",
+
+  
+  
+  
+  
+}
