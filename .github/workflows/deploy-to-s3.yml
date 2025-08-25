@@ -32,7 +32,11 @@ jobs:
       - name: "Checkout repo"
         uses: actions/checkout@v4
       - name: "Abort if any trace of development build is detected (it should be a staging build)."
-        run: grep -r "localhost:1313" * && { echo "::error::Development build detected. 'public' dir/repo should contly be committed after running 'hugo -e staging' in source dir." && exit 1 }
+        run: |
+          if [ $(grep -cr "localhost:1313" *) -gt 0 ]; then
+            echo "::error::Development build detected. 'public' dir/repo should only be committed after running 'hugo -e staging' in source dir." 
+            exit 1 
+          fi
       - name: "Replace 'staging' Google tags with 'production' equivalents"
         run: find . -type f -exec sed -i~ 's/B3ECKP96EL/DPHXLK5VEW/g' '{}' '+'
       - name: "Replace 'staging' URL with 'production' equivalent"
