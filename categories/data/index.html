@@ -30,6 +30,16 @@
 
 
 
+<link rel="shortcut icon" href="/images/favicon_hu_bf23c4e979396799.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hu_bf23c4e979396799.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu_9cebc9351ec5afa9.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu_bf23c4e979396799.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu_24d26590dfc9881b.png">
+
+
+
+
+
 
 
 
@@ -339,6 +349,49 @@
     
 
 
+  <div id="announcement" class="announcement announcement-hide">
+    Registrations now open for 2026 season.
+    <button id="announcement-button" class="announcement-button">
+      &times;
+    </button>
+  </div>
+
+  
+  <style>
+    .announcement {
+      position: relative;
+      z-index: 999;
+      padding: 1rem;
+      padding-right: 2.8rem;
+      background-color: #fff;
+      box-shadow: 1px 0px 10px 7px rgba(154, 154, 154, 0.11);
+      font-size: 1.1rem;
+    }
+    .announcement-button {
+      cursor: pointer;
+      padding: 0 0.5rem;
+      border: 0;
+      font-size: 1.3rem;
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      border: 1px solid;
+      border-radius: 50%;
+      height: 1.1em;
+      width: 1.1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .announcement-hide {
+      display: none;
+    }
+    .dark .announcement {
+      background-color: #222;
+    }
+  </style>
+
 
 
 
@@ -366,6 +419,9 @@
 
 
 
+  
+
+
 
 
 
@@ -374,7 +430,76 @@
 
 
   
-  Hugoplate
+  
+  
+
+
+  
+  
+    
+    
+  
+
+
+  
+  
+      
+      
+    
+    
+    
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+      
+      
+
+
+      
+      
+        
+        
+        
+        
+
+        
+        
+        
+      
+      
+    
+  
+  
+
+  
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-light"
+      width="160"
+      height="32"
+      src="/images/logo_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo_hu_a0443ed27472c23c.png';" />
+
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-dark"
+      width="160"
+      height="32"
+      src="/images/logo-darkmode_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu_a0443ed27472c23c.png';" />
+  
+  
 
 
       </a>
@@ -439,8 +564,8 @@
             <a
               class="nav-link "
               
-              href="/elements"
-              >Elements</a
+              href="/gallery"
+              >Gallery</a
             >
           </li>
         
@@ -467,10 +592,6 @@
                 
                 
                 
-              
-                
-                
-                
                inline-flex items-center">
               Pages
               <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
@@ -480,17 +601,6 @@
             </span>
             <ul
               class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
-              
-                
-                
-                <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link "
-                    
-                    href="/404">
-                    404 Page
-                  </a>
-                </li>
               
                 
                 
@@ -545,7 +655,7 @@
           <a
             class="btn btn-outline-primary btn-sm"
             href="/contact">
-            get a quote
+            join our club
           </a>
         </li>
       
@@ -567,51 +677,6 @@
       
 
       
-
-
-
-
-
-
-
-  
-
-  
-
-
-
-  
-
-
-<select class="mr-5 pl-2 py-1 dark:bg-darkmode-light rounded" onchange="location = this.value">
-  
-    
-    
-    
-      <option
-        id="af"
-        value="https://test.steinitzchessclub.co.za/af/"
-      
-        >
-        
-      </option>
-    
-  
-    
-    
-    
-      <option
-        id="en"
-        value="https://test.steinitzchessclub.co.za/categories/data/"
-      
-        selected
-      
-        >
-        En
-      </option>
-    
-  
-</select>
 
       
 
@@ -697,7 +762,7 @@
         <a
           href="/contact"
           class="btn btn-outline-primary btn-sm hidden lg:inline-block">
-          get a quote
+          join our club
         </a>
       
     </div>
@@ -713,7 +778,7 @@
     <div
       class="search-modal "
       aria-hidden="true"
-      style="--color-primary: #121212">
+      style="--color-primary: #CAE5F5">
       <div data-target="close-search-modal" class="search-modal-overlay"></div>
       <div
         class="search-wrapper"
@@ -902,102 +967,86 @@
 
 
 
+  
+
 
 
 
 
   
 
-  
-  
-
-
-  
-
-
-  
-  <h4 class="mb-3">
-    <a href="/blog/post-1/">
-      How to build an Application with modern Technology
-    </a>
-  </h4>
-  
-  
-    <ul class="mb-4">
-      <li class="mr-4 inline-block">
-        <a href="/authors/john-doe/">
-          <i class="fa-regular fa-circle-user mr-2"></i>John Doe
-        </a>
-      </li>
-      <li class="mr-4 inline-block">
-        <i class="fa-regular fa-folder mr-1"></i>
-        
-          <a
-            href="/categories/application/"
-            class="ms-1"
-            >Application
-              ,
-            
-          </a>
-        
-          <a
-            href="/categories/data/"
-            class="ms-1"
-            >Data
-          </a>
-        
-      </li>
-    </ul>
-  
-  <p class="mb-6">Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/post-1/">
-    Read More
-  </a>
-</div>
-
-              </div>
-            
-              <div class="md:col-6 mb-14">
-                <div class="bg-body dark:bg-darkmode-body">
   
   
     
+      
+    
 
 
+    
+    
 
 
+    
+    
+      
+      
+    
+    
+    
 
 
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
 
 
+        
+        
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
+        <picture>
+          <source
+            
+              srcset="/images/image-placeholder_hu_c8971dd714d7d967.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/image-placeholder_hu_7feb4cff3f0f2f38.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/image-placeholder_hu_aa8934e738977bd1.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/image-placeholder_hu_c6a26df46efa63e0.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/image-placeholder_hu_8da812934bbff7ba.png"
+            class=" mb-6 w-full rounded img"
+            alt="How to build an Application with modern Technology"
+            width="1096"
+            height="480" />
+        </picture>
+      
+      
+    
+    
   
 
 
@@ -1047,184 +1096,6 @@
 
               </div>
             
-              <div class="md:col-6 mb-14">
-                <div class="bg-body dark:bg-darkmode-body">
-  
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-  
-
-
-  
-
-
-  
-  <h4 class="mb-3">
-    <a href="/english/blog/post-1/">
-      How to build an Application with modern Technology
-    </a>
-  </h4>
-  
-  
-    <ul class="mb-4">
-      <li class="mr-4 inline-block">
-        <a href="/authors/john-doe/">
-          <i class="fa-regular fa-circle-user mr-2"></i>John Doe
-        </a>
-      </li>
-      <li class="mr-4 inline-block">
-        <i class="fa-regular fa-folder mr-1"></i>
-        
-          <a
-            href="/categories/application/"
-            class="ms-1"
-            >Application
-              ,
-            
-          </a>
-        
-          <a
-            href="/categories/data/"
-            class="ms-1"
-            >Data
-          </a>
-        
-      </li>
-    </ul>
-  
-  <p class="mb-6">Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-</p>
-  <a class="btn btn-outline-primary btn-sm" href="/english/blog/post-1/">
-    Read More
-  </a>
-</div>
-
-              </div>
-            
-              <div class="md:col-6 mb-14">
-                <div class="bg-body dark:bg-darkmode-body">
-  
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-  
-
-
-  
-
-
-  
-  <h4 class="mb-3">
-    <a href="/english/blog/post-2/">
-      How to build an Application with modern Technology
-    </a>
-  </h4>
-  
-  
-    <ul class="mb-4">
-      <li class="mr-4 inline-block">
-        <a href="/authors/sam-wilson/">
-          <i class="fa-regular fa-circle-user mr-2"></i>Sam Wilson
-        </a>
-      </li>
-      <li class="mr-4 inline-block">
-        <i class="fa-regular fa-folder mr-1"></i>
-        
-          <a
-            href="/categories/technology/"
-            class="ms-1"
-            >Technology
-              ,
-            
-          </a>
-        
-          <a
-            href="/categories/data/"
-            class="ms-1"
-            >Data
-          </a>
-        
-      </li>
-    </ul>
-  
-  <p class="mb-6">Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-</p>
-  <a class="btn btn-outline-primary btn-sm" href="/english/blog/post-2/">
-    Read More
-  </a>
-</div>
-
-              </div>
-            
           </div>
         </div>
       </div>
@@ -1258,6 +1129,9 @@
 
 
 
+  
+
+
 
 
 
@@ -1266,7 +1140,76 @@
 
 
   
-  Hugoplate
+  
+  
+
+
+  
+  
+    
+    
+  
+
+
+  
+  
+      
+      
+    
+    
+    
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+      
+      
+
+
+      
+      
+        
+        
+        
+        
+
+        
+        
+        
+      
+      
+    
+  
+  
+
+  
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-light"
+      width="160"
+      height="32"
+      src="/images/logo_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo_hu_a0443ed27472c23c.png';" />
+
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-dark"
+      width="160"
+      height="32"
+      src="/images/logo-darkmode_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu_a0443ed27472c23c.png';" />
+  
+  
 
 
         </a>
@@ -1314,7 +1257,7 @@
                 target="_blank"
                 aria-label="facebook"
                 rel="nofollow noopener"
-                href="https://www.facebook.com/">
+                href="https://www.facebook.com/groups/772690220938183">
                 <i class="fab fa-facebook"></i>
               </a>
             </li>
@@ -1322,30 +1265,10 @@
             <li>
               <a
                 target="_blank"
-                aria-label="twitter"
+                aria-label="whatsapp"
                 rel="nofollow noopener"
-                href="https://twitter.com/">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          
-            <li>
-              <a
-                target="_blank"
-                aria-label="github"
-                rel="nofollow noopener"
-                href="https://www.github.com/">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          
-            <li>
-              <a
-                target="_blank"
-                aria-label="linkedin"
-                rel="nofollow noopener"
-                href="https://www.linkedin.com/">
-                <i class="fab fa-linkedin"></i>
+                href="https://chat.whatsapp.com/FKSWcAnYsKKJNyaKClz2sY">
+                <i class="fab fa-whatsapp"></i>
               </a>
             </li>
           
@@ -1357,16 +1280,8 @@
     <div
       class="text-text-light dark:text-darkmode-text-light container text-center">
       <p>
-        Designed &amp; Developed by <a href="https://zeon.studio"
-
-
-
-
- target="_blank"
- 
-
-
->Zeon Studio</a>
+          &copy;2025 Steinitz Chess Club
+          
       </p>
     </div>
   </div>
@@ -1481,6 +1396,20 @@
 
 
 
+  
+    <script type="application/javascript">
+      const announcementBox = document.getElementById('announcement');
+      const announcementButton = document.getElementById('announcement-button');
+      if (!Cookies.get('announcement-close')) {
+        announcementBox.classList.remove('announcement-hide');
+        announcementButton.onclick = function () {
+          Cookies.set('announcement-close', true, {
+            expires:  90 
+          });
+          announcementBox.classList.add('announcement-hide');
+        };
+      }
+    </script>
   
 
 
