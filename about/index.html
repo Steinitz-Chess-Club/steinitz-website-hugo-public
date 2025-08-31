@@ -30,6 +30,16 @@
 
 
 
+<link rel="shortcut icon" href="/images/favicon_hu_bf23c4e979396799.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hu_bf23c4e979396799.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu_9cebc9351ec5afa9.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu_bf23c4e979396799.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu_24d26590dfc9881b.png">
+
+
+
+
+
 
 
 
@@ -92,26 +102,18 @@
 
   <meta
     name="keywords"
-    content="Boilerplate, Hugo" />
+    content="Chess, Club" />
 
 
 
 
 <meta
   name="description"
-  content="this is meta description" />
+  content="A concise history of Steinitz Chess Club, its mission, milestones, and how we serve the Cape Town chess community." />
 
 
 
-  <meta name="author" content="zeon.studio" />
-
-
-
-
-
-
-  
-  
+  <meta name="author" content="Colin Webber" />
 
 
 
@@ -119,7 +121,7 @@
 
 
   
-
+  
 
 
 
@@ -128,12 +130,54 @@
 
   
 
+
+
+
+
+
+
+  
+
   
   
   
 
 
   
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+      
+        <meta property="og:image" content="https://test.steinitzchessclub.co.za/images/steinitz-clock.png" />
+        <meta name="twitter:image" content="https://test.steinitzchessclub.co.za/images/steinitz-clock.png" />
+        <meta
+          name="twitter:card"
+          content="summary" />
+      
+      
+      <meta property="og:image:width" content="538" />
+      <meta property="og:image:height" content="538" />
+    
+
+
+    
+    <meta
+      property="og:image:type"
+      content="image/.png" />
   
 
 
@@ -144,19 +188,17 @@
 
 
 <meta property="og:title" content="About" />
-<meta property="og:description" content="this is meta description" />
+<meta property="og:description" content="A concise history of Steinitz Chess Club, its mission, milestones, and how we serve the Cape Town chess community." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://test.steinitzchessclub.co.za/about/" />
 
 
 <meta name="twitter:title" content="About" />
-<meta name="twitter:description" content="this is meta description" />
+<meta name="twitter:description" content="A concise history of Steinitz Chess Club, its mission, milestones, and how we serve the Cape Town chess community." />
 
 
-  <meta name="twitter:site" content="@zeon_studio" />
 
-
-  <meta name="twitter:creator" content="@zeon.studio" />
+  <meta name="twitter:creator" content="@Colin Webber" />
 
 
 
@@ -321,22 +363,11 @@
   <body>
     
     
-      
+        
 
 
 
-
-
-      
-      <div
-  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
-  <span class="block sm:hidden">all</span>
-  <span class="hidden sm:block md:hidden">sm</span>
-  <span class="hidden md:block lg:hidden">md</span>
-  <span class="hidden lg:block xl:hidden">lg</span>
-  <span class="hidden xl:block 2xl:hidden">xl</span>
-  <span class="hidden 2xl:block">2xl</span>
-</div>
+        
 
     
 
@@ -344,6 +375,49 @@
     
     
 
+
+  <div id="announcement" class="announcement announcement-hide">
+    Registrations now open for 2026 season.
+    <button id="announcement-button" class="announcement-button">
+      &times;
+    </button>
+  </div>
+
+  
+  <style>
+    .announcement {
+      position: relative;
+      z-index: 999;
+      padding: 1rem;
+      padding-right: 2.8rem;
+      background-color: #fff;
+      box-shadow: 1px 0px 10px 7px rgba(154, 154, 154, 0.11);
+      font-size: 1.1rem;
+    }
+    .announcement-button {
+      cursor: pointer;
+      padding: 0 0.5rem;
+      border: 0;
+      font-size: 1.3rem;
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      border: 1px solid;
+      border-radius: 50%;
+      height: 1.1em;
+      width: 1.1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .announcement-hide {
+      display: none;
+    }
+    .dark .announcement {
+      background-color: #222;
+    }
+  </style>
 
 
 
@@ -372,6 +446,9 @@
 
 
 
+  
+
+
 
 
 
@@ -380,7 +457,76 @@
 
 
   
-  Hugoplate
+  
+  
+
+
+  
+  
+    
+    
+  
+
+
+  
+  
+      
+      
+    
+    
+    
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+      
+      
+
+
+      
+      
+        
+        
+        
+        
+
+        
+        
+        
+      
+      
+    
+  
+  
+
+  
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-light"
+      width="160"
+      height="32"
+      src="/images/logo_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo_hu_a0443ed27472c23c.png';" />
+
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-dark"
+      width="160"
+      height="32"
+      src="/images/logo-darkmode_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu_a0443ed27472c23c.png';" />
+  
+  
 
 
       </a>
@@ -445,8 +591,8 @@
             <a
               class="nav-link "
               
-              href="/elements"
-              >Elements</a
+              href="/gallery"
+              >Gallery</a
             >
           </li>
         
@@ -465,20 +611,8 @@
                 
                 
                 
-              
-                
-                
-                
-              
-                
-                
-                
-              
-                
-                
-                
                inline-flex items-center">
-              Pages
+              Our People
               <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
                 <path
                   d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
@@ -493,8 +627,8 @@
                   <a
                     class="nav-dropdown-link "
                     
-                    href="/404">
-                    404 Page
+                    href="/leaders">
+                    Leaders
                   </a>
                 </li>
               
@@ -509,40 +643,35 @@
                   </a>
                 </li>
               
-                
-                
-                <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link "
-                    
-                    href="/blog">
-                    Blog
-                  </a>
-                </li>
-              
-                
-                
-                <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link "
-                    
-                    href="/categories">
-                    Categories
-                  </a>
-                </li>
-              
-                
-                
-                <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link "
-                    
-                    href="/contact">
-                    Contact
-                  </a>
-                </li>
-              
             </ul>
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/blog"
+              >Blog</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/contact"
+              >Contact Us</a
+            >
           </li>
         
       
@@ -551,7 +680,7 @@
           <a
             class="btn btn-outline-primary btn-sm"
             href="/contact">
-            get a quote
+            join our club
           </a>
         </li>
       
@@ -573,51 +702,6 @@
       
 
       
-
-
-
-
-
-
-
-  
-
-  
-
-
-
-  
-
-
-<select class="mr-5 pl-2 py-1 dark:bg-darkmode-light rounded" onchange="location = this.value">
-  
-    
-    
-    
-      <option
-        id="af"
-        value="https://test.steinitzchessclub.co.za/af/"
-      
-        >
-        
-      </option>
-    
-  
-    
-    
-    
-      <option
-        id="en"
-        value="https://test.steinitzchessclub.co.za/about/"
-      
-        selected
-      
-        >
-        En
-      </option>
-    
-  
-</select>
 
       
 
@@ -703,7 +787,7 @@
         <a
           href="/contact"
           class="btn btn-outline-primary btn-sm hidden lg:inline-block">
-          get a quote
+          join our club
         </a>
       
     </div>
@@ -719,7 +803,7 @@
     <div
       class="search-modal "
       aria-hidden="true"
-      style="--color-primary: #121212">
+      style="--color-primary: #CAE5F5">
       <div data-target="close-search-modal" class="search-modal-overlay"></div>
       <div
         class="search-wrapper"
@@ -857,6 +941,8 @@
 
 
 
+  
+
 
 
 
@@ -865,13 +951,127 @@
 
   
   
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <img
+          
+            src="/images/steinitz-clock_hu_8b16ee44deaeaf84.webp" loading="lazy"
+            decoding="async"
+          
+
+          alt="Our Founding and Vision"
+          class=" mx-auto mb-6 img"
+          width="200"
+          height="200"
+          onerror="this.onerror='null';
+          this.src='\/images\/steinitz-clock_hu_e2f1e99ec5aeffa8.png';" />
+
+        
+      
+      
+    
+    
+  
 
 
   
 
 
-          <h2 class="h3 mb-6">Hey, I am John Doe!</h2>
-          <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.</p>
+          <h2 class="h3 mb-6">Our Founding and Vision</h2>
+          <div class="content"><h1 id="steinitz-chess-club--a-short-history">Steinitz Chess Club — A Short History</h1>
+<p><strong>Mission.</strong> Steinitz Chess Club exists to create a welcoming, competitive, and educational space for chess players of all ages and abilities in Cape Town. We believe chess strengthens critical thinking, sportsmanship, and community — and we run events, training and outreach programs to bring those benefits to as many people as possible.</p>
+<h2 id="origins-and-founding-spirit">Origins and founding spirit</h2>
+<p>Steinitz Chess Club began when a small group of Cape Town chess enthusiasts decided they wanted a local club with a strong emphasis on friendly competition, learning, and community engagement. From the outset the club aimed to be accessible — a place where newcomers can learn the rules, club players can improve through regular practice and coaching, and more experienced players can find tournament-calibre opposition.</p>
+<p>The club&rsquo;s name honours Wilhelm Steinitz, the first official World Chess Champion, signalling our commitment both to good sportsmanship and to the study of chess as an evolving, scientific discipline.</p>
+<h2 id="early-years--building-a-community">Early years — building a community</h2>
+<p>In its early years the club focused on weekly meetups, casual rapid play and internal ladders to help new members find regular opponents. Volunteers handled administration, coaching and event organisation; chess sets, clocks and board space were pooled from members and generous local supporters. These grassroots efforts created a reliable weekly rhythm that attracted students, professionals and hobby players alike.</p>
+<h2 id="growth-structure-and-competition">Growth, structure and competition</h2>
+<p>As membership grew the club formalised its structure: forming a committee, scheduling regular rated events, and affiliating with local and national chess bodies to allow members to play in official league matches and rated tournaments. Over time the club introduced:</p>
+<ul>
+<li>Structured coaching sessions (beginner, intermediate, and advanced groups).</li>
+<li>An internal season of club trophies and monthly rapid events.</li>
+<li>Representation in regional leagues and inter-club matches.</li>
+<li>Junior programmes and school outreach.</li>
+</ul>
+<p>This balance of friendly weekly play and competitive opportunities helped Steinitz develop a reputation for being both welcoming and serious about improvement.</p>
+<h2 id="junior-development-and-outreach">Junior development and outreach</h2>
+<p>A key strand of Steinitz’s work has been introducing chess to young people. The club runs regular junior sessions, collaborates with local schools, and organises beginner workshops. Outreach efforts emphasise inclusivity — making chess accessible regardless of prior exposure, and offering subsidised memberships or free entry to events where funds allow.</p>
+<h2 id="club-culture-and-learning">Club culture and learning</h2>
+<p>Steinitz prides itself on a culture of respectful analysis and practical learning. Post-game reviews, coaching clinics, and informal study groups are a normal part of club nights. The club encourages members to study classic games, practical endgames, and to develop positive habits: notation, game review, and tournament etiquette.</p>
+<h2 id="notable-events-and-milestones">Notable events and milestones</h2>
+<p>Over the years the club has hosted a variety of events that have helped raise its profile:</p>
+<ul>
+<li>Regular in-house championship cycles and open rapid tournaments drawing players from across the Cape Town metro.</li>
+<li>Friendly matches and fixtures against other clubs in the Western Cape.</li>
+<li>Coaching weekends with guest coaches and titled players.</li>
+<li>Special community events (family chess days, simultaneous exhibitions, and school tournaments).</li>
+</ul>
+<h2 id="administration-and-volunteers">Administration and volunteers</h2>
+<p>Steinitz is run by a small committee of volunteers: club officers who manage finance, fixtures, junior programmes, and communications. Volunteer coaches — ranging from enthusiastic intermediates to titled players — provide training and run the teaching curriculum. The club relies on member subscriptions, small entry fees for events, and occasional local sponsorship to cover hall hire, equipment and awards.</p>
+<h2 id="impact-and-community">Impact and community</h2>
+<p>Beyond trophies and ratings, Steinitz measures success by the friendships formed, the confidence given to schoolchildren, and the opportunities created for players of all levels to compete and improve. Many members credit the club with helping them return to serious chess, or with providing their first taste of tournament play.</p>
+<h2 id="today-and-the-future">Today and the future</h2>
+<p>Today Steinitz continues to run weekly club nights, a calendar of rated and unrated events, junior classes, and outreach work. The club is committed to:</p>
+<ul>
+<li>Expanding junior programmes and partnerships with schools.</li>
+<li>Increasing accessibility (reduced-fee membership options, more beginner coaching).</li>
+<li>Hosting more open events to bring new players into the Cape Town chess community.</li>
+</ul>
+<h2 id="practical-information">Practical information</h2>
+<p><strong>When we meet:</strong> Weekly club nights (check the club calendar for exact evenings and start times).<br>
+<strong>Membership:</strong> Annual membership plus event fees; a family discount available.</p>
+
+
+
+
+
+
+ 
+  
+  
+ 
+  
+  
+ 
+  
+  
+ 
+
+
+<a href="https://test.steinitzchessclub.co.za/contact" class="btn btn-primary "  rel="" >Contact Form</a>
+
 </div>
         </div>
       </div>
@@ -905,6 +1105,9 @@
 
 
 
+  
+
+
 
 
 
@@ -913,7 +1116,76 @@
 
 
   
-  Hugoplate
+  
+  
+
+
+  
+  
+    
+    
+  
+
+
+  
+  
+      
+      
+    
+    
+    
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+      
+      
+
+
+      
+      
+        
+        
+        
+        
+
+        
+        
+        
+      
+      
+    
+  
+  
+
+  
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-light"
+      width="160"
+      height="32"
+      src="/images/logo_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo_hu_a0443ed27472c23c.png';" />
+
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-dark"
+      width="160"
+      height="32"
+      src="/images/logo-darkmode_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu_a0443ed27472c23c.png';" />
+  
+  
 
 
         </a>
@@ -935,9 +1207,9 @@
               <a
                 
                 href="
-                  /elements
+                  /gallery
                 "
-                >Elements</a
+                >Gallery</a
               >
             </li>
           
@@ -961,7 +1233,7 @@
                 target="_blank"
                 aria-label="facebook"
                 rel="nofollow noopener"
-                href="https://www.facebook.com/">
+                href="https://www.facebook.com/groups/772690220938183">
                 <i class="fab fa-facebook"></i>
               </a>
             </li>
@@ -969,30 +1241,10 @@
             <li>
               <a
                 target="_blank"
-                aria-label="twitter"
+                aria-label="whatsapp"
                 rel="nofollow noopener"
-                href="https://twitter.com/">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          
-            <li>
-              <a
-                target="_blank"
-                aria-label="github"
-                rel="nofollow noopener"
-                href="https://www.github.com/">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          
-            <li>
-              <a
-                target="_blank"
-                aria-label="linkedin"
-                rel="nofollow noopener"
-                href="https://www.linkedin.com/">
-                <i class="fab fa-linkedin"></i>
+                href="https://chat.whatsapp.com/FKSWcAnYsKKJNyaKClz2sY">
+                <i class="fab fa-whatsapp"></i>
               </a>
             </li>
           
@@ -1004,16 +1256,10 @@
     <div
       class="text-text-light dark:text-darkmode-text-light container text-center">
       <p>
-        Designed &amp; Developed by <a href="https://zeon.studio"
-
-
-
-
- target="_blank"
- 
-
-
->Zeon Studio</a>
+          &copy;2025 Steinitz Chess Club
+          
+        <p>This page was last modified on 31 Aug 2025</p>
+        
       </p>
     </div>
   </div>
@@ -1128,6 +1374,20 @@
 
 
 
+  
+    <script type="application/javascript">
+      const announcementBox = document.getElementById('announcement');
+      const announcementButton = document.getElementById('announcement-button');
+      if (!Cookies.get('announcement-close')) {
+        announcementBox.classList.remove('announcement-hide');
+        announcementButton.onclick = function () {
+          Cookies.set('announcement-close', true, {
+            expires:  90 
+          });
+          announcementBox.classList.add('announcement-hide');
+        };
+      }
+    </script>
   
 
 

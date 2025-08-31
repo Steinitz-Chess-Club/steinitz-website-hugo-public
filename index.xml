@@ -1,103 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>With Unity to Prosperity on Steinitz Chess Club</title>
+    <title>Steinitz Chess Club</title>
     <link>https://test.steinitzchessclub.co.za/</link>
-    <description>Recent content in With Unity to Prosperity on Steinitz Chess Club</description>
+    <description>Recent content on Steinitz Chess Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Apr 2025 15:39:51 +0200</lastBuildDate>
     <atom:link href="https://test.steinitzchessclub.co.za/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Contact</title>
-      <link>https://test.steinitzchessclub.co.za/contact-us/</link>
-      <pubDate>Wed, 23 Apr 2025 15:39:51 +0200</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/contact-us/</guid>
-      <description></description>
+      <title>2025 CTCF Club League</title>
+      <link>https://test.steinitzchessclub.co.za/gallery/2025-ctcf-club-league/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/gallery/2025-ctcf-club-league/</guid>
+      <description>&lt;p&gt;The 2025 CTCF Club League is Cape Town’s premier team chess competition, bringing together the region’s strongest clubs in an 11-round tournament played over three months. The league showcases both established masters and rising talents, fostering competitive spirit and community among local players. With the season still underway, every round remains crucial as teams battle for top honors and bragging rights in one of South Africa’s most prestigious club events.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Achievements</title>
-      <link>https://test.steinitzchessclub.co.za/achievements/</link>
-      <pubDate>Wed, 23 Apr 2025 15:39:40 +0200</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/achievements/</guid>
-      <description></description>
+      <title>Evaluate before you Calculate!</title>
+      <link>https://test.steinitzchessclub.co.za/blog/evaluate-before-you-calculate/</link>
+      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/blog/evaluate-before-you-calculate/</guid>
+      <description>&lt;h1 id=&#34;positional-insight-the-four-key-elements&#34;&gt;Positional Insight: The Four Key Elements&lt;/h1&gt;&#xA;&lt;p&gt;Positional insight is gained by applying four key elements to any position. These universal elements will improve your calculation process once fully grasped. Don’t rush to calculate lines—first aim to understand the situation.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>History</title>
-      <link>https://test.steinitzchessclub.co.za/history/</link>
-      <pubDate>Wed, 23 Apr 2025 15:37:56 +0200</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/history/</guid>
-      <description></description>
+      <title>Reflections on the 2019 Cape Town Club League</title>
+      <link>https://test.steinitzchessclub.co.za/blog/reflections-on-2019-chess-western-province-league/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/blog/reflections-on-2019-chess-western-province-league/</guid>
+      <description>&lt;h1 id=&#34;reflections-on-steinitz-in-the-wp-league&#34;&gt;Reflections on Steinitz in the WP League&lt;/h1&gt;&#xA;&lt;p&gt;When I look back at the 2019 Western Province League, I feel immense pride in what Steinitz Chess Club has achieved. Over the course of that season, we played &lt;strong&gt;11 matches&lt;/strong&gt;, winning &lt;strong&gt;10&lt;/strong&gt; and drawing just one — against a strong MRL side. Not once did we taste defeat. That kind of consistency doesn’t happen by accident. It reflects years of teamwork, preparation, and commitment.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Development</title>
-      <link>https://test.steinitzchessclub.co.za/development/</link>
-      <pubDate>Wed, 23 Apr 2025 15:33:14 +0200</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/development/</guid>
-      <description></description>
+      <title>2014 AfriClub Champs</title>
+      <link>https://test.steinitzchessclub.co.za/gallery/2014-african-club-championship/</link>
+      <pubDate>Sun, 23 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/gallery/2014-african-club-championship/</guid>
+      <description>&lt;p&gt;In March 2014, Cape Town proudly hosted the prestigious African Club Chess Championship at the Sun Hotel. The event brought together top club teams from across the continent, showcasing Africa’s finest chess talent in a spirit of competition and camaraderie. Players battled over the boards in a festival of strategy and skill, while the Mother City provided a fitting backdrop with its vibrant culture and iconic scenery. The tournament not only highlighted the growing strength of African chess but also reinforced Cape Town’s reputation as a hub for international sporting events.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>How to build an Application with modern Technology</title>
-      <link>https://test.steinitzchessclub.co.za/blog/post-1/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/blog/post-1/</guid>
-      <description>&lt;p&gt;Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to build an Application with modern Technology</title>
-      <link>https://test.steinitzchessclub.co.za/blog/post-2/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/blog/post-2/</guid>
-      <description>&lt;p&gt;Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to build an Application with modern Technology</title>
-      <link>https://test.steinitzchessclub.co.za/blog/post-3/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/blog/post-3/</guid>
-      <description>&lt;p&gt;Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to build an Application with modern Technology</title>
-      <link>https://test.steinitzchessclub.co.za/blog/post-4/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/blog/post-4/</guid>
-      <description>&lt;p&gt;Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to build an Application with modern Technology</title>
-      <link>https://test.steinitzchessclub.co.za/english/blog/post-1/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/english/blog/post-1/</guid>
-      <description>&lt;p&gt;Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to build an Application with modern Technology</title>
-      <link>https://test.steinitzchessclub.co.za/english/blog/post-2/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/english/blog/post-2/</guid>
-      <description>&lt;p&gt;Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to build an Application with modern Technology</title>
-      <link>https://test.steinitzchessclub.co.za/english/blog/post-3/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/english/blog/post-3/</guid>
-      <description>&lt;p&gt;Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to build an Application with modern Technology</title>
-      <link>https://test.steinitzchessclub.co.za/english/blog/post-4/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/english/blog/post-4/</guid>
-      <description>&lt;p&gt;Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Elements</title>
-      <link>https://test.steinitzchessclub.co.za/english/pages/elements/</link>
+      <title>Andrew Talmarkes</title>
+      <link>https://test.steinitzchessclub.co.za/leaders/andrew-talmarkes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/english/pages/elements/</guid>
-      <description>&lt;details class=&#34;table-of-content &#34;&gt;&#xA;  &lt;summary&gt;&#xA;    &#xA;      Table of Contents&#xA;    &#xA;  &lt;/summary&gt;&#xA;  &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ol&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#heading-2&#34;&gt;Heading 2&lt;/a&gt;&#xA;      &lt;ol&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#heading-3&#34;&gt;Heading 3&lt;/a&gt;&#xA;          &lt;ol&gt;&#xA;            &lt;li&gt;&lt;a href=&#34;#heading-4&#34;&gt;Heading 4&lt;/a&gt;&#xA;              &lt;ol&gt;&#xA;                &lt;li&gt;&lt;a href=&#34;#heading-5&#34;&gt;Heading 5&lt;/a&gt;&lt;/li&gt;&#xA;              &lt;/ol&gt;&#xA;            &lt;/li&gt;&#xA;          &lt;/ol&gt;&#xA;        &lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#emphasis&#34;&gt;Emphasis&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#button&#34;&gt;Button&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#link&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#paragraph&#34;&gt;Paragraph&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#ordered-list&#34;&gt;Ordered List&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#unordered-list&#34;&gt;Unordered List&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#notice&#34;&gt;Notice&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#tab&#34;&gt;Tab&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#accordions&#34;&gt;Accordions&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#code-and-syntax-highlighting&#34;&gt;Code and Syntax Highlighting&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#blockquote&#34;&gt;Blockquote&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#tables&#34;&gt;Tables&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#image&#34;&gt;Image&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#gallery&#34;&gt;Gallery&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#slider&#34;&gt;Slider&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#youtube-video&#34;&gt;Youtube video&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#custom-video&#34;&gt;Custom video&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ol&gt;&#xA;    &lt;/li&gt;&#xA;  &lt;/ol&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&lt;p&gt;Here is an example of headings. You can use this heading by the following markdown rules. For example: use &lt;code&gt;#&lt;/code&gt; for heading 1 and use &lt;code&gt;######&lt;/code&gt; for heading 6.&lt;/p&gt;</description>
+      <guid>https://test.steinitzchessclub.co.za/leaders/andrew-talmarkes/</guid>
+      <description>&lt;p&gt;Andrew Talmarkes is an accomplished chess coach, FIDE-licensed arbiter, and long-time leader within Cape Town’s Steinitz Chess Club. He is the Director of the Insight Chess Academy, providing specialized individual and group coaching—including tailored sessions for clients with ADHD or focus challenges.&#xA;A pillar in chess administration, he has served in numerous key roles: tournament director, deputy chief arbiter at the 2024 Cape Town Masters Challenge, and fixture within the CHESSA arbiter program as well as the Western Province youth coaching scene.&#xA;Awarded the Community Builder Award in 2013 for his work on Mitchell’s Plain Chess Development and Library Project, Talmarkes continues to shape youth and community chess.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Clinton Solomon</title>
+      <link>https://test.steinitzchessclub.co.za/leaders/clinton-solomon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/leaders/clinton-solomon/</guid>
+      <description>&lt;p&gt;I am primarily a chess parent of a talented youth player. I enjoy being able to help the other young players in my capacity as a club youth director.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Colin Webber</title>
+      <link>https://test.steinitzchessclub.co.za/leaders/colin-webber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/leaders/colin-webber/</guid>
+      <description>&lt;p&gt;Colin Webber is a former a chess parent (his son Ethan no longer plays competitively), now an &amp;ldquo;adult improver&amp;rdquo; player who enjoys supporting up-and-coming young players.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Declan Platen</title>
+      <link>https://test.steinitzchessclub.co.za/leaders/declan-platen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/leaders/declan-platen/</guid>
+      <description>&lt;p&gt;Declan Platen is the youngest member of Steinitz Exco but is one of the most impactful in his role as Club Captain. During the 2025 CTCF league he managed the placement of players in all club teams while also producing an outstanding performance in the B and A teams. As of 2025, he holds a FIDE rating of 1732 in standard chess and 1753 in rapid formats.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Elements</title>
@@ -107,32 +71,32 @@
       <description>&lt;details class=&#34;table-of-content &#34;&gt;&#xA;  &lt;summary&gt;&#xA;    &#xA;      Table of Contents&#xA;    &#xA;  &lt;/summary&gt;&#xA;  &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ol&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#heading-2&#34;&gt;Heading 2&lt;/a&gt;&#xA;      &lt;ol&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#heading-3&#34;&gt;Heading 3&lt;/a&gt;&#xA;          &lt;ol&gt;&#xA;            &lt;li&gt;&lt;a href=&#34;#heading-4&#34;&gt;Heading 4&lt;/a&gt;&#xA;              &lt;ol&gt;&#xA;                &lt;li&gt;&lt;a href=&#34;#heading-5&#34;&gt;Heading 5&lt;/a&gt;&lt;/li&gt;&#xA;              &lt;/ol&gt;&#xA;            &lt;/li&gt;&#xA;          &lt;/ol&gt;&#xA;        &lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#emphasis&#34;&gt;Emphasis&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#button&#34;&gt;Button&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#link&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#paragraph&#34;&gt;Paragraph&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#ordered-list&#34;&gt;Ordered List&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#unordered-list&#34;&gt;Unordered List&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#notice&#34;&gt;Notice&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#tab&#34;&gt;Tab&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#accordions&#34;&gt;Accordions&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#code-and-syntax-highlighting&#34;&gt;Code and Syntax Highlighting&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#blockquote&#34;&gt;Blockquote&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#tables&#34;&gt;Tables&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#image&#34;&gt;Image&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#gallery&#34;&gt;Gallery&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#slider&#34;&gt;Slider&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#youtube-video&#34;&gt;Youtube video&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#custom-video&#34;&gt;Custom video&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ol&gt;&#xA;    &lt;/li&gt;&#xA;  &lt;/ol&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&lt;p&gt;Here is an example of headings. You can use this heading by the following markdown rules. For example: use &lt;code&gt;#&lt;/code&gt; for heading 1 and use &lt;code&gt;######&lt;/code&gt; for heading 6.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>John Doe</title>
-      <link>https://test.steinitzchessclub.co.za/authors/john-doe/</link>
+      <title>Kenny Willenberg</title>
+      <link>https://test.steinitzchessclub.co.za/authors/kenneth-willenberg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/authors/john-doe/</guid>
-      <description>&lt;p&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.&lt;/p&gt;</description>
+      <guid>https://test.steinitzchessclub.co.za/authors/kenneth-willenberg/</guid>
+      <description>&lt;p&gt;I am very active as a Semi-Pro Chess Player on the Elite South African Chess Scene and a High Performance Private Chess Trainer with over 20 years experience coaching at all levels.&#xA;On a National Level I am proud to still hold the record for most consecutive SA Junior Titles winning the National Junior Championship (SAJCC) in U16 - U20 an unprecedented 5 years in a row including being 2 Time Winner of SA Junior Closed (SAJCCC) The most prestigious Junior Chess event in South Africa.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>John Doe</title>
-      <link>https://test.steinitzchessclub.co.za/english/authors/john-doe/</link>
+      <title>Lyndon Bouah</title>
+      <link>https://test.steinitzchessclub.co.za/authors/lyndon-bouah/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/english/authors/john-doe/</guid>
-      <description>&lt;p&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.&lt;/p&gt;</description>
+      <guid>https://test.steinitzchessclub.co.za/authors/lyndon-bouah/</guid>
+      <description></description>
     </item>
     <item>
-      <title>Privacy</title>
-      <link>https://test.steinitzchessclub.co.za/english/pages/privacy-policy/</link>
+      <title>Mark Lewis</title>
+      <link>https://test.steinitzchessclub.co.za/leaders/mark-lewis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/english/pages/privacy-policy/</guid>
-      <description>&lt;h4 id=&#34;responsibility-of-contributors&#34;&gt;Responsibility of Contributors&lt;/h4&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed&lt;/p&gt;</description>
+      <guid>https://test.steinitzchessclub.co.za/leaders/mark-lewis/</guid>
+      <description>&lt;p&gt;Mark Lewis is a seasoned chess coach and a founding member of Cape Town’s Steinitz Chess Club, established in 1976 when four high-school students in Bonteheuwel came together to form a club named after World Champion Wilhelm Steinitz.&#xA;A respected leader in South African chess, Lewis is a former president of both the Steinitz Chess Club and the Cape Town Chess Federation (CTCF). Under his leadership, Steinitz grew into one of the strongest clubs in the country, winning national titles and nurturing top players from the Cape Flats.&#xA;In addition to his administrative and coaching roles, Lewis remains active as a competitive player, highlighted by his victory at the 2022 South African Senior Championship, scoring 7.5 points. His lifelong dedication has left a lasting mark on South African chess.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy</title>
       <link>https://test.steinitzchessclub.co.za/privacy-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://test.steinitzchessclub.co.za/privacy-policy/</guid>
-      <description>&lt;h4 id=&#34;responsibility-of-contributors&#34;&gt;Responsibility of Contributors&lt;/h4&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h1&gt;&#xA;&lt;p&gt;At &lt;strong&gt;Steinitz Chess Club&lt;/strong&gt;, we’re not just about chess — we’re about people. That means we respect your privacy and take care to protect any personal information you share with us. This policy explains, in plain language, what we collect, why we collect it, and how you stay in control.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ready to build your next project with Hugo?</title>
@@ -142,53 +106,25 @@
       <description></description>
     </item>
     <item>
-      <title>Ready to build your next project with Hugo?</title>
+      <title>Roland Willenberg</title>
+      <link>https://test.steinitzchessclub.co.za/leaders/roland-willenberg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/leaders/roland-willenberg/</guid>
+      <description>&lt;p&gt;Roland Willenberg is a veteran South African chess coach and one of the founding members of Steinitz. As a trailblazer in coaching, he was recognized as Cape Town’s first professional chess coach.&#xA;Roland is also known as the father and early mentor of his sons, Kenny and Craig, both former junior South African champions. His contributions to South African chess—through community building, mentorship, and fostering talent—cement his reputation as a key figure in nurturing chess culture on the Cape Flats.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shaun Willenberg</title>
+      <link>https://test.steinitzchessclub.co.za/leaders/shaun-willenberg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/leaders/shaun-willenberg/</guid>
+      <description>&lt;p&gt;Shaun Willenberg is a founding member of the Steinitz Chess Club in Cape Town, established in 1976. The club was formed by four high-school students in the Kalksteensfontein area of Bonteheuwel, who named it after the first recognised chess world champion, Austrian Wilhelm Steinitz.&#xA;Shaun has been actively involved in the club&amp;rsquo;s activities over the years. In the 2020 Steinitz Chess Festival, he was among the top performers, finishing on tiebreak in a five-way tie for first place.&#xA;Shaun&amp;rsquo;s contributions have been instrumental in the club&amp;rsquo;s development and success, reflecting his dedication to promoting chess in the Cape Flats community.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What people Are Saying About Steinitz Chess Club</title>
       <link></link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid></guid>
       <description></description>
-    </item>
-    <item>
-      <title>Sam Wilson</title>
-      <link>https://test.steinitzchessclub.co.za/authors/sam-wilson/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/authors/sam-wilson/</guid>
-      <description>&lt;p&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sam Wilson</title>
-      <link>https://test.steinitzchessclub.co.za/english/authors/sam-wilson/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/english/authors/sam-wilson/</guid>
-      <description>&lt;p&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What Users Are Saying About Hugoplate</title>
-      <link></link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid></guid>
-      <description></description>
-    </item>
-    <item>
-      <title>What Users Are Saying About Hugoplate</title>
-      <link></link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid></guid>
-      <description></description>
-    </item>
-    <item>
-      <title>William Jacob</title>
-      <link>https://test.steinitzchessclub.co.za/authors/william-jacob/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/authors/william-jacob/</guid>
-      <description>&lt;p&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>William Jacob</title>
-      <link>https://test.steinitzchessclub.co.za/english/authors/william-jacob/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/english/authors/william-jacob/</guid>
-      <description>&lt;p&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

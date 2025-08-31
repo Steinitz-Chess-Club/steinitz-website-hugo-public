@@ -6,41 +6,62 @@
     <description>Recent content in Tags on Steinitz Chess Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 Aug 2025 17:33:03 +0200</lastBuildDate>
     <atom:link href="https://test.steinitzchessclub.co.za/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Nextjs</title>
-      <link>https://test.steinitzchessclub.co.za/tags/nextjs/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/nextjs/</guid>
+      <title>About</title>
+      <link>https://test.steinitzchessclub.co.za/tags/about/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0200</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/tags/about/</guid>
       <description></description>
     </item>
     <item>
-      <title>Silicon</title>
-      <link>https://test.steinitzchessclub.co.za/tags/silicon/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/silicon/</guid>
+      <title>Club</title>
+      <link>https://test.steinitzchessclub.co.za/tags/club/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0200</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/tags/club/</guid>
       <description></description>
     </item>
     <item>
-      <title>Software</title>
-      <link>https://test.steinitzchessclub.co.za/tags/software/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/software/</guid>
+      <title>History</title>
+      <link>https://test.steinitzchessclub.co.za/tags/history/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0200</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/tags/history/</guid>
       <description></description>
     </item>
     <item>
-      <title>Tailwind</title>
-      <link>https://test.steinitzchessclub.co.za/tags/tailwind/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/tailwind/</guid>
+      <title>Calculation</title>
+      <link>https://test.steinitzchessclub.co.za/tags/calculation/</link>
+      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/tags/calculation/</guid>
       <description></description>
     </item>
     <item>
-      <title>Technology</title>
-      <link>https://test.steinitzchessclub.co.za/tags/technology/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/technology/</guid>
+      <title>Evalutation</title>
+      <link>https://test.steinitzchessclub.co.za/tags/evalutation/</link>
+      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/tags/evalutation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strategy</title>
+      <link>https://test.steinitzchessclub.co.za/tags/strategy/</link>
+      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/tags/strategy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>League</title>
+      <link>https://test.steinitzchessclub.co.za/tags/league/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/tags/league/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tournament</title>
+      <link>https://test.steinitzchessclub.co.za/tags/tournament/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/tags/tournament/</guid>
       <description></description>
     </item>
   </channel>

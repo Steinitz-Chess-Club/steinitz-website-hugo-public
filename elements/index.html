@@ -30,6 +30,16 @@
 
 
 
+<link rel="shortcut icon" href="/images/favicon_hu_bf23c4e979396799.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hu_bf23c4e979396799.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu_9cebc9351ec5afa9.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu_bf23c4e979396799.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu_24d26590dfc9881b.png">
+
+
+
+
+
 
 
 
@@ -91,7 +101,7 @@
 
   <meta
     name="keywords"
-    content="Boilerplate, Hugo" />
+    content="Chess, Club" />
 
 
 
@@ -102,7 +112,7 @@
 
 
 
-  <meta name="author" content="zeon.studio" />
+  <meta name="author" content="Colin Webber" />
 
 
 
@@ -131,6 +141,40 @@
 
 
   
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+      
+        <meta property="og:image" content="https://test.steinitzchessclub.co.za/images/og-image.png" />
+        <meta name="twitter:image" content="https://test.steinitzchessclub.co.za/images/og-image.png" />
+        <meta
+          name="twitter:card"
+          content="summary_large_image" />
+      
+      
+      <meta property="og:image:width" content="2664" />
+      <meta property="og:image:height" content="1414" />
+    
+
+
+    
+    <meta
+      property="og:image:type"
+      content="image/.png" />
   
 
 
@@ -150,10 +194,8 @@
 <meta name="twitter:description" content="This is meta description" />
 
 
-  <meta name="twitter:site" content="@zeon_studio" />
 
-
-  <meta name="twitter:creator" content="@zeon.studio" />
+  <meta name="twitter:creator" content="@Colin Webber" />
 
 
 
@@ -215,6 +257,9 @@
 
 
 
+  <script type="module">
+    import mermaid from "https:\/\/cdn.jsdelivr.net\/npm\/mermaid@latest\/dist\/mermaid.esm.min.mjs";
+  </script>
 
 
 
@@ -318,22 +363,11 @@
   <body>
     
     
-      
+        
 
 
 
-
-
-      
-      <div
-  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
-  <span class="block sm:hidden">all</span>
-  <span class="hidden sm:block md:hidden">sm</span>
-  <span class="hidden md:block lg:hidden">md</span>
-  <span class="hidden lg:block xl:hidden">lg</span>
-  <span class="hidden xl:block 2xl:hidden">xl</span>
-  <span class="hidden 2xl:block">2xl</span>
-</div>
+        
 
     
 
@@ -341,6 +375,49 @@
     
     
 
+
+  <div id="announcement" class="announcement announcement-hide">
+    Registrations now open for 2026 season.
+    <button id="announcement-button" class="announcement-button">
+      &times;
+    </button>
+  </div>
+
+  
+  <style>
+    .announcement {
+      position: relative;
+      z-index: 999;
+      padding: 1rem;
+      padding-right: 2.8rem;
+      background-color: #fff;
+      box-shadow: 1px 0px 10px 7px rgba(154, 154, 154, 0.11);
+      font-size: 1.1rem;
+    }
+    .announcement-button {
+      cursor: pointer;
+      padding: 0 0.5rem;
+      border: 0;
+      font-size: 1.3rem;
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      border: 1px solid;
+      border-radius: 50%;
+      height: 1.1em;
+      width: 1.1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .announcement-hide {
+      display: none;
+    }
+    .dark .announcement {
+      background-color: #222;
+    }
+  </style>
 
 
 
@@ -369,6 +446,9 @@
 
 
 
+  
+
+
 
 
 
@@ -377,7 +457,76 @@
 
 
   
-  Hugoplate
+  
+  
+
+
+  
+  
+    
+    
+  
+
+
+  
+  
+      
+      
+    
+    
+    
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+      
+      
+
+
+      
+      
+        
+        
+        
+        
+
+        
+        
+        
+      
+      
+    
+  
+  
+
+  
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-light"
+      width="160"
+      height="32"
+      src="/images/logo_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo_hu_a0443ed27472c23c.png';" />
+
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-dark"
+      width="160"
+      height="32"
+      src="/images/logo-darkmode_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu_a0443ed27472c23c.png';" />
+  
+  
 
 
       </a>
@@ -442,8 +591,8 @@
             <a
               class="nav-link "
               
-              href="/elements"
-              >Elements</a
+              href="/gallery"
+              >Gallery</a
             >
           </li>
         
@@ -462,20 +611,8 @@
                 
                 
                 
-              
-                
-                
-                
-              
-                
-                
-                
-              
-                
-                
-                
                inline-flex items-center">
-              Pages
+              Our People
               <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
                 <path
                   d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
@@ -490,8 +627,8 @@
                   <a
                     class="nav-dropdown-link "
                     
-                    href="/404">
-                    404 Page
+                    href="/leaders">
+                    Leaders
                   </a>
                 </li>
               
@@ -506,40 +643,35 @@
                   </a>
                 </li>
               
-                
-                
-                <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link "
-                    
-                    href="/blog">
-                    Blog
-                  </a>
-                </li>
-              
-                
-                
-                <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link "
-                    
-                    href="/categories">
-                    Categories
-                  </a>
-                </li>
-              
-                
-                
-                <li class="nav-dropdown-item">
-                  <a
-                    class="nav-dropdown-link "
-                    
-                    href="/contact">
-                    Contact
-                  </a>
-                </li>
-              
             </ul>
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/blog"
+              >Blog</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/contact"
+              >Contact Us</a
+            >
           </li>
         
       
@@ -548,7 +680,7 @@
           <a
             class="btn btn-outline-primary btn-sm"
             href="/contact">
-            get a quote
+            join our club
           </a>
         </li>
       
@@ -570,51 +702,6 @@
       
 
       
-
-
-
-
-
-
-
-  
-
-  
-
-
-
-  
-
-
-<select class="mr-5 pl-2 py-1 dark:bg-darkmode-light rounded" onchange="location = this.value">
-  
-    
-    
-    
-      <option
-        id="af"
-        value="https://test.steinitzchessclub.co.za/af/"
-      
-        >
-        
-      </option>
-    
-  
-    
-    
-    
-      <option
-        id="en"
-        value="https://test.steinitzchessclub.co.za/elements/"
-      
-        selected
-      
-        >
-        En
-      </option>
-    
-  
-</select>
 
       
 
@@ -700,7 +787,7 @@
         <a
           href="/contact"
           class="btn btn-outline-primary btn-sm hidden lg:inline-block">
-          get a quote
+          join our club
         </a>
       
     </div>
@@ -716,7 +803,7 @@
     <div
       class="search-modal "
       aria-hidden="true"
-      style="--color-primary: #121212">
+      style="--color-primary: #CAE5F5">
       <div data-target="close-search-modal" class="search-modal-overlay"></div>
       <div
         class="search-wrapper"
@@ -1377,9 +1464,71 @@ example.com (but not on Github, for example).</p>
   
     
     
-    <strong style="color:red; margin-bottom:15px; display:inline-block;"
-      >https://test.steinitzchessclub.co.za/images/image-placeholder.png does not exist</strong
-    >
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+        
+        
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      
+      
+          <img
+            title="image title"
+            loading="lazy"
+            decoding="async"
+            class="img img-fluid img-center"
+            width="1096"
+            height="480"
+            src="/images/image-placeholder_hu_89e8f8217304aa93.png"
+            alt="alter-text"
+            onerror="this.onerror='null';this.src='\/images\/image-placeholder_hu_89e8f8217304aa93.png'" />
+      
+    
+
   
   
 
@@ -1418,12 +1567,20 @@ example.com (but not on Github, for example).</p>
 
 
 
-  <strong style="display: inline-block; margin-top:15px">
-    Nothing to show in [https://test.steinitzchessclub.co.za/<span style="color:red">
-      images/gallery
-    </span>
-    ] or folder does not exist
-  </strong>
+  
+  <div
+    class=" gallery 
+      zoomable
+    ">
+    
+      
+      
+      
+    
+    
+  </div>
+
+  
 
 <hr>
 <h3 id="slider">Slider</h3>
@@ -1452,12 +1609,16 @@ example.com (but not on Github, for example).</p>
     
     
       
-      <strong style="display: inline-block; margin-top:15px">
-        Nothing to show in [https://test.steinitzchessclub.co.za/<span style="color:red">
-          images/gallery
-        </span>
-        ] or folder does not exist
-      </strong>
+      
+        
+        
+        
+      
+
+
+      
+
+      
     
     
   </div>
@@ -1546,6 +1707,9 @@ example.com (but not on Github, for example).</p>
 
 
 
+  
+
+
 
 
 
@@ -1554,7 +1718,76 @@ example.com (but not on Github, for example).</p>
 
 
   
-  Hugoplate
+  
+  
+
+
+  
+  
+    
+    
+  
+
+
+  
+  
+      
+      
+    
+    
+    
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+      
+      
+
+
+      
+      
+        
+        
+        
+        
+
+        
+        
+        
+      
+      
+    
+  
+  
+
+  
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-light"
+      width="160"
+      height="32"
+      src="/images/logo_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo_hu_a0443ed27472c23c.png';" />
+
+    <img
+      fetchpriority="high"
+      decoding="async"
+      class="img img-dark"
+      width="160"
+      height="32"
+      src="/images/logo-darkmode_hu_edf93e6eea265c.webp"
+      alt="Steinitz Chess Club"
+      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu_a0443ed27472c23c.png';" />
+  
+  
 
 
         </a>
@@ -1576,9 +1809,9 @@ example.com (but not on Github, for example).</p>
               <a
                 
                 href="
-                  /elements
+                  /gallery
                 "
-                >Elements</a
+                >Gallery</a
               >
             </li>
           
@@ -1602,7 +1835,7 @@ example.com (but not on Github, for example).</p>
                 target="_blank"
                 aria-label="facebook"
                 rel="nofollow noopener"
-                href="https://www.facebook.com/">
+                href="https://www.facebook.com/groups/772690220938183">
                 <i class="fab fa-facebook"></i>
               </a>
             </li>
@@ -1610,30 +1843,10 @@ example.com (but not on Github, for example).</p>
             <li>
               <a
                 target="_blank"
-                aria-label="twitter"
+                aria-label="whatsapp"
                 rel="nofollow noopener"
-                href="https://twitter.com/">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          
-            <li>
-              <a
-                target="_blank"
-                aria-label="github"
-                rel="nofollow noopener"
-                href="https://www.github.com/">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          
-            <li>
-              <a
-                target="_blank"
-                aria-label="linkedin"
-                rel="nofollow noopener"
-                href="https://www.linkedin.com/">
-                <i class="fab fa-linkedin"></i>
+                href="https://chat.whatsapp.com/FKSWcAnYsKKJNyaKClz2sY">
+                <i class="fab fa-whatsapp"></i>
               </a>
             </li>
           
@@ -1645,16 +1858,10 @@ example.com (but not on Github, for example).</p>
     <div
       class="text-text-light dark:text-darkmode-text-light container text-center">
       <p>
-        Designed &amp; Developed by <a href="https://zeon.studio"
-
-
-
-
- target="_blank"
- 
-
-
->Zeon Studio</a>
+          &copy;2025 Steinitz Chess Club
+          
+        <p>This page was last modified on 24 Aug 2025</p>
+        
       </p>
     </div>
   </div>
@@ -1769,6 +1976,20 @@ example.com (but not on Github, for example).</p>
 
 
 
+  
+    <script type="application/javascript">
+      const announcementBox = document.getElementById('announcement');
+      const announcementButton = document.getElementById('announcement-button');
+      if (!Cookies.get('announcement-close')) {
+        announcementBox.classList.remove('announcement-hide');
+        announcementButton.onclick = function () {
+          Cookies.set('announcement-close', true, {
+            expires:  90 
+          });
+          announcementBox.classList.add('announcement-hide');
+        };
+      }
+    </script>
   
 
 
