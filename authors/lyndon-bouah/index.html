@@ -168,8 +168,8 @@
           content="summary" />
       
       
-      <meta property="og:image:width" content="500" />
-      <meta property="og:image:height" content="500" />
+      <meta property="og:image:width" content="250" />
+      <meta property="og:image:height" content="250" />
     
 
 
@@ -511,9 +511,9 @@
       class="img img-light"
       width="160"
       height="32"
-      src="/images/logo_hu_edf93e6eea265c.webp"
+      src="/images/logo-light-mode-3d-transparent_hu_36283d7fb5cc958.webp"
       alt="Steinitz Chess Club"
-      onerror="this.onerror=null;this.src='\/images\/logo_hu_a0443ed27472c23c.png';" />
+      onerror="this.onerror=null;this.src='\/images\/logo-light-mode-3d-transparent_hu_25f953992da7372e.png';" />
 
     <img
       fetchpriority="high"
@@ -521,9 +521,9 @@
       class="img img-dark"
       width="160"
       height="32"
-      src="/images/logo-darkmode_hu_edf93e6eea265c.webp"
+      src="/images/logo-dark-mode-3d-transparent_hu_682ae5bf67ca5375.webp"
       alt="Steinitz Chess Club"
-      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu_a0443ed27472c23c.png';" />
+      onerror="this.onerror=null;this.src='\/images\/logo-dark-mode-3d-transparent_hu_41092f4f2d8eb836.png';" />
   
   
 
@@ -1031,7 +1031,7 @@
 
         <img
           
-            src="/images/people/lyndon-bouah_hu_93ceb3100e04bcf6.webp" loading="lazy"
+            src="/images/people/lyndon-bouah_hu_74a54b8ab32b57fe.webp" loading="lazy"
             decoding="async"
           
 
@@ -1040,7 +1040,7 @@
           width="500"
           height="500"
           onerror="this.onerror='null';
-          this.src='\/images\/people\/lyndon-bouah_hu_d27fb5fd5859e877.png';" />
+          this.src='\/images\/people\/lyndon-bouah_hu_9f6c6ac84c99f6c1.png';" />
 
         
       
@@ -1056,7 +1056,9 @@
           
           <h1 class="h3 mt-10">Lyndon Bouah</h1>
           <div class="content mt-6">
-            
+            <p>Dr. Lyndon Bouah is a distinguished figure in South African chess—both as a competitive veteran and as a scholar-administrator. Holding the title of Candidate Master, he has represented his nation at events including the 1992 and 1994 Chess Olympiads. In 2024, Bouah made a remarkable return to competitive play, emerging as co-champion in the Senior Section of the South African Closed Chess Championship, achieving an undefeated 8.5/11 alongside Dr. Shabier Bhawoodien.
+Off the board, Dr. Bouah is a committed researcher and author, notably publishing Reflection on Chess in the Rainbow Nation, a deeply personal and cultural exploration of chess in South Africa. He also serves as the Chief Director for Sport and Recreation in the Western Cape, blending his passion for chess with leadership in public service.</p>
+
           </div>
           <ul class="social-icons ml-4 mt-10 text-center">
             
@@ -1359,9 +1361,9 @@
       class="img img-light"
       width="160"
       height="32"
-      src="/images/logo_hu_edf93e6eea265c.webp"
+      src="/images/logo-light-mode-3d-transparent_hu_36283d7fb5cc958.webp"
       alt="Steinitz Chess Club"
-      onerror="this.onerror=null;this.src='\/images\/logo_hu_a0443ed27472c23c.png';" />
+      onerror="this.onerror=null;this.src='\/images\/logo-light-mode-3d-transparent_hu_25f953992da7372e.png';" />
 
     <img
       fetchpriority="high"
@@ -1369,9 +1371,9 @@
       class="img img-dark"
       width="160"
       height="32"
-      src="/images/logo-darkmode_hu_edf93e6eea265c.webp"
+      src="/images/logo-dark-mode-3d-transparent_hu_682ae5bf67ca5375.webp"
       alt="Steinitz Chess Club"
-      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu_a0443ed27472c23c.png';" />
+      onerror="this.onerror=null;this.src='\/images\/logo-dark-mode-3d-transparent_hu_41092f4f2d8eb836.png';" />
   
   
 
@@ -1549,6 +1551,57 @@
 
 
 
+  
+    <div id="cookie-box" class="cookie-box cookie-box-hide">
+      This site uses cookies. By continuing to use this website, you agree to their use.
+      <button
+        id="cookie-button"
+        class="cookie-box-button btn btn-sm btn-outline-primary">
+        I Accept
+      </button>
+    </div>
+
+    
+    <script type="application/javascript">
+      const cookieBox = document.getElementById('cookie-box');
+      const cookieButton = document.getElementById('cookie-button');
+      if (!Cookies.get('cookie-consent')) {
+        cookieBox.classList.remove('cookie-box-hide');
+        cookieButton.onclick = function () {
+          Cookies.set('cookie-consent', true, {
+            expires:  60 
+          });
+          cookieBox.classList.add('cookie-box-hide');
+        };
+      }
+    </script>
+
+    
+    <style>
+      .cookie-box {
+        position: fixed;
+        left: 2rem;
+        bottom: 2rem;
+        z-index: 9999;
+        padding: 1.5rem;
+        background-color: #fff;
+        max-width: calc(100% - 4rem);
+        width: 25rem;
+        box-shadow: 1px 0px 10px 7px rgba(154, 154, 154, 0.11);
+        border-radius: inherit;
+      }
+      .cookie-box-hide {
+        display: none;
+      }
+      .cookie-box-button {
+        display: block;
+        margin-top: 1rem;
+      }
+
+      .dark .cookie-box {
+        background-color: #222;
+      }
+    </style>
   
 
 

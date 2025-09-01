@@ -42,6 +42,8 @@ jobs:
         run: find . -type f -exec sed -i~ 's/B3ECKP96EL/DPHXLK5VEW/g' '{}' '+'
       - name: "Replace 'staging' URL with 'production' equivalent"
         run: find . -type f -exec sed -i~ 's/test\.steinitzchessclub\.co\.za/www.steinitzchessclub.co.za/g' '{}' '+'
+      - name: "Allow indexing by search engines"
+        run: find . -type f -name "robots.txt" -exec sed -i~ 's/Disallow:.*/Disallow:/g' {} '+'
       - name: "Remove ~ suffixed temp files created as part of the above SED operation."
         run: find . -name "*~" -exec rm {} +
       - name: Remove hidden files and dirs recursively
