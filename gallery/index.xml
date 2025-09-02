@@ -8,24 +8,38 @@
     <language>en-us</language>
     <atom:link href="https://test.steinitzchessclub.co.za/gallery/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2024 Steinitz Festival</title>
-      <link>https://test.steinitzchessclub.co.za/gallery/2024-05-11_steinitz-festival/</link>
-      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/gallery/2024-05-11_steinitz-festival/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s a family affair&amp;hellip; The 47th anniversary Steinitz Chess Festival.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>2025 CTCF Club League</title>
-      <link>https://test.steinitzchessclub.co.za/gallery/2025-ctcf-club-league/</link>
+      <link>https://test.steinitzchessclub.co.za/gallery/2025_ctcf-club-league/</link>
       <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/gallery/2025-ctcf-club-league/</guid>
+      <guid>https://test.steinitzchessclub.co.za/gallery/2025_ctcf-club-league/</guid>
       <description>&lt;p&gt;The 2025 CTCF Club League is Cape Town’s premier team chess competition, bringing together the region’s strongest clubs in an 11-round tournament played over three months. The league showcases both established masters and rising talents, fostering competitive spirit and community among local players. With the season still underway, every round remains crucial as teams battle for top honors and bragging rights in one of South Africa’s most prestigious club events.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>2025 Hermanus Chess Club Open</title>
+      <link>https://test.steinitzchessclub.co.za/gallery/2025_hermanus-chess-club-open/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/gallery/2025_hermanus-chess-club-open/</guid>
+      <description>&lt;p&gt;Hermanus Chess Club hosted it&amp;rsquo;s annual open on a rainy April day. However, multiple Steinitz players shone brightly, bringing home medals and trophies in all divisions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024 Steinitz Festival</title>
+      <link>https://test.steinitzchessclub.co.za/gallery/2024_steinitz-festival/</link>
+      <pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/gallery/2024_steinitz-festival/</guid>
+      <description>&lt;p&gt;The 47th anniversary Steinitz Chess Festival took place at Fairbairn College, Goodwood. 250 players participated with various Junior age groups, rapid sections, Fide rated sections. Players came from as far afield as Namibia, KZN and Mossel Bay, Overberg.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024 SA Senior Closed</title>
+      <link>https://test.steinitzchessclub.co.za/gallery/2024_sa-senior-closed/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/gallery/2024_sa-senior-closed/</guid>
+      <description>&lt;p&gt;The 2024 SA Senior Closed at the iconic Newlands venue was a fiercely contested and well-organized event, ending with Dr Lyndon Bouah and FM Shabier Bhawoodien sharing the senior title in a fitting display of competitive balance and sporting tradition.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>2014 AfriClub Champs</title>
-      <link>https://test.steinitzchessclub.co.za/gallery/2014-african-club-championship/</link>
+      <link>https://test.steinitzchessclub.co.za/gallery/2014_african-club-championship/</link>
       <pubDate>Sun, 23 Mar 2014 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/gallery/2014-african-club-championship/</guid>
+      <guid>https://test.steinitzchessclub.co.za/gallery/2014_african-club-championship/</guid>
       <description>&lt;p&gt;In March 2014, Cape Town proudly hosted the prestigious African Club Chess Championship at the Sun Hotel. The event brought together top club teams from across the continent, showcasing Africa’s finest chess talent in a spirit of competition and camaraderie. Players battled over the boards in a festival of strategy and skill, while the Mother City provided a fitting backdrop with its vibrant culture and iconic scenery. The tournament not only highlighted the growing strength of African chess but also reinforced Cape Town’s reputation as a hub for international sporting events.&lt;/p&gt;</description>
     </item>
   </channel>
