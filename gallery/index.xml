@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Photo Gallery on Steinitz Chess Club</title>
+    <title>Steinitzians in action! on Steinitz Chess Club</title>
     <link>https://test.steinitzchessclub.co.za/gallery/</link>
-    <description>Recent content in Photo Gallery on Steinitz Chess Club</description>
+    <description>Recent content in Steinitzians in action! on Steinitz Chess Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://test.steinitzchessclub.co.za/gallery/index.xml" rel="self" type="application/rss+xml" />
@@ -29,11 +29,25 @@
       <description>&lt;p&gt;The 47th anniversary Steinitz Chess Festival took place at Fairbairn College, Goodwood. 250 players participated with various Junior age groups, rapid sections, Fide rated sections. Players came from as far afield as Namibia, KZN and Mossel Bay, Overberg.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>2024 Club Championship</title>
+      <link>https://test.steinitzchessclub.co.za/gallery/2024-04-13_steinitz-club-championship/</link>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/gallery/2024-04-13_steinitz-club-championship/</guid>
+      <description>&lt;p&gt;The 2024 Annual Steinitz Chess Club Championship took place in Cape Town on Saturday, April 13th, 2024. The event featured six rounds played at a rapid time control of 20 minutes plus a 5-second increment per move. Bringing together a strong field of club members, the championship provided an exciting day of competitive chess, highlighting both seasoned players and rising stars within the Steinitz community.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>2024 SA Senior Closed</title>
       <link>https://test.steinitzchessclub.co.za/gallery/2024_sa-senior-closed/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://test.steinitzchessclub.co.za/gallery/2024_sa-senior-closed/</guid>
       <description>&lt;p&gt;The 2024 SA Senior Closed at the iconic Newlands venue was a fiercely contested and well-organized event, ending with Dr Lyndon Bouah and FM Shabier Bhawoodien sharing the senior title in a fitting display of competitive balance and sporting tradition.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2022 CTCF Club League</title>
+      <link>https://test.steinitzchessclub.co.za/gallery/2022_ctcf-club-league/</link>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://test.steinitzchessclub.co.za/gallery/2022_ctcf-club-league/</guid>
+      <description>&lt;p&gt;Congratulations to our Steinitz A-team for winning the Premier Division of the 2022 Chess WP Club League Championship! We also congratulate Kraaifontein (winners of B Division), Capablanca (winners of C Division) and Delft (winners of D Division).&lt;/p&gt;</description>
     </item>
     <item>
       <title>2014 AfriClub Champs</title>
