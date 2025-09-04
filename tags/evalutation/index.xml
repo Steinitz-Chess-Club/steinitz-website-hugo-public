@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Evalutation on Steinitz Chess Club</title>
-    <link>//localhost:1313/tags/evalutation/</link>
+    <link>https://test.steinitzchessclub.co.za/tags/evalutation/</link>
     <description>Recent content in Evalutation on Steinitz Chess Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Aug 2025 21:18:42 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/evalutation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://test.steinitzchessclub.co.za/tags/evalutation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Evaluate before you Calculate!</title>
-      <link>//localhost:1313/blog/evaluate-before-you-calculate/</link>
+      <link>https://test.steinitzchessclub.co.za/blog/evaluate-before-you-calculate/</link>
       <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/evaluate-before-you-calculate/</guid>
+      <guid>https://test.steinitzchessclub.co.za/blog/evaluate-before-you-calculate/</guid>
       <description>&lt;h1 id=&#34;positional-insight-the-four-key-elements&#34;&gt;Positional Insight: The Four Key Elements&lt;/h1&gt;&#xA;&lt;p&gt;Positional insight is gained by applying four key elements to any position. These universal elements will improve your calculation process once fully grasped. Don’t rush to calculate lines—first aim to understand the situation.&lt;/p&gt;</description>
     </item>
   </channel>
