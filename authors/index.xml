@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Steinitz Chess Club</title>
-    <link>https://test.steinitzchessclub.co.za/authors/</link>
+    <link>//localhost:1313/authors/</link>
     <description>Recent content in Authors on Steinitz Chess Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://test.steinitzchessclub.co.za/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kenny Willenberg</title>
-      <link>https://test.steinitzchessclub.co.za/authors/kenneth-willenberg/</link>
+      <link>//localhost:1313/authors/kenneth-willenberg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/authors/kenneth-willenberg/</guid>
+      <guid>//localhost:1313/authors/kenneth-willenberg/</guid>
       <description>&lt;p&gt;Kenneth Sean “Kenny” Willenberg is a South African Candidate Master (CM), currently regarded as one of Cape Town’s stronger players, with a classical rating hovering near 1927.&#xA;A product of the Western Cape chess scene and Head Coach of Steinitz Chess Club, Kenny has demonstrated consistent tournament performance both in national closed championships and local league play&#xA;Once the SA Under-20 Champion, he has also completed multiple appearances in the SA Closed Championship, establishing himself early as a top junior in the country. Beyond the board, he has contributed as a chess coach through programs such as at Curro Schools, nurturing new talent in South Africa.&#xA;Overall, Kenny embodies a blend of competitive strength and mentorship, making him a respected figure in the South African chess community.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lyndon Bouah</title>
-      <link>https://test.steinitzchessclub.co.za/authors/lyndon-bouah/</link>
+      <link>//localhost:1313/authors/lyndon-bouah/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/authors/lyndon-bouah/</guid>
+      <guid>//localhost:1313/authors/lyndon-bouah/</guid>
       <description>&lt;p&gt;Dr. Lyndon Bouah is a distinguished figure in South African chess—both as a competitive veteran and as a scholar-administrator. Holding the title of Candidate Master, he has represented his nation at events including the 1992 and 1994 Chess Olympiads. In 2024, Bouah made a remarkable return to competitive play, emerging as co-champion in the Senior Section of the South African Closed Chess Championship, achieving an undefeated 8.5/11 alongside Dr. Shabier Bhawoodien.&#xA;Off the board, Dr. Bouah is a committed researcher and author, notably publishing Reflection on Chess in the Rainbow Nation, a deeply personal and cultural exploration of chess in South Africa. He also serves as the Chief Director for Sport and Recreation in the Western Cape, blending his passion for chess with leadership in public service.&lt;/p&gt;</description>
     </item>
   </channel>

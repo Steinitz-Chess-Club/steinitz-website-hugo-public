@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Steinitz Chess Club</title>
-    <link>https://test.steinitzchessclub.co.za/tags/about/</link>
+    <link>//localhost:1313/tags/about/</link>
     <description>Recent content in About on Steinitz Chess Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Sep 2025 11:34:43 +0200</lastBuildDate>
-    <atom:link href="https://test.steinitzchessclub.co.za/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Our Founding and Vision</title>
-      <link>https://test.steinitzchessclub.co.za/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0200</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description>&lt;h1 id=&#34;steinitz-chess-club--a-short-history&#34;&gt;Steinitz Chess Club — A Short History&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Mission.&lt;/strong&gt; Steinitz Chess Club exists to create a welcoming, competitive, and educational space for chess players of all ages and abilities in Cape Town. We believe chess strengthens critical thinking, sportsmanship, and community — and we run events, training and outreach programs to bring those benefits to as many people as possible.&lt;/p&gt;</description>
     </item>
   </channel>
