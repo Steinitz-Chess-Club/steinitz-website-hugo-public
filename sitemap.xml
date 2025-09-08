@@ -2,20 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://test.steinitzchessclub.co.za/login/</loc>
+    <lastmod>2025-09-07T14:45:22+02:00</lastmod>
+  </url><url>
     <loc>https://test.steinitzchessclub.co.za/tags/about/</loc>
-    <lastmod>2025-09-03T11:34:43+02:00</lastmod>
+    <lastmod>2025-09-05T11:22:10+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/tags/club/</loc>
-    <lastmod>2025-09-03T11:34:43+02:00</lastmod>
+    <lastmod>2025-09-05T11:22:10+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/tags/history/</loc>
-    <lastmod>2025-09-03T11:34:43+02:00</lastmod>
+    <lastmod>2025-09-05T11:22:10+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/about/</loc>
-    <lastmod>2025-09-03T11:34:43+02:00</lastmod>
+    <lastmod>2025-09-05T11:22:10+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/tags/</loc>
-    <lastmod>2025-09-03T11:34:43+02:00</lastmod>
+    <lastmod>2025-09-05T11:22:10+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/gallery/2025_ctcf-club-league/</loc>
     <lastmod>2025-09-03T11:34:43+02:00</lastmod>
