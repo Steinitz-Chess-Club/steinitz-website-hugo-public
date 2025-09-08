@@ -6,6 +6,7 @@
   itemtype="http://schema.org/WebPage">
   <head>
     
+    
     <meta charset="utf-8" />
 
 
@@ -356,9 +357,15 @@
   onload="this.media='all'; this.onload=null;" />
 
 
+      
+        
+        
+        
+      
   </head>
 
   <body>
+
     
     
         
@@ -416,7 +423,6 @@
       background-color: #222;
     }
   </style>
-
 
 
 
@@ -692,8 +698,8 @@
         <li class="mt-4 inline-block lg:hidden">
           <a
             class="btn btn-outline-primary btn-sm"
-            href="/contact">
-            join our club
+            href="/login">
+            member zone
           </a>
         </li>
       
@@ -798,9 +804,9 @@
       
       
         <a
-          href="/contact"
+          href="/login"
           class="btn btn-outline-primary btn-sm hidden lg:inline-block">
-          join our club
+          member zone
         </a>
       
     </div>
@@ -1075,7 +1081,7 @@ In February 2025, Paul achieved a notable second-place finish in the Advanced Se
 Paul&rsquo;s dedication to chess is further evident from his inclusion in the Western Province U16 Open Trials in 2022, indicating his early promise and commitment to the game.</p>
 
           </div>
-          <ul class="social-icons ml-4 mt-10 text-center">
+          <ul class="social-icons ml-4 mt-10 text-center auth-only" style="display:none;">
             
               <li>
                 <a
@@ -1483,5 +1489,6 @@ Paul&rsquo;s dedication to chess is further evident from his inclusion in the We
 
 
 
+    <script src="/js/session.js"></script>
   </body>
 </html>

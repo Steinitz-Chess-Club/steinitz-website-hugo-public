@@ -6,6 +6,7 @@
   itemtype="http://schema.org/WebPage">
   <head>
     
+    
     <meta charset="utf-8" />
 
 
@@ -356,9 +357,15 @@
   onload="this.media='all'; this.onload=null;" />
 
 
+      
+        
+        
+        
+      
   </head>
 
   <body>
+
     
     
         
@@ -416,7 +423,6 @@
       background-color: #222;
     }
   </style>
-
 
 
 
@@ -692,8 +698,8 @@
         <li class="mt-4 inline-block lg:hidden">
           <a
             class="btn btn-outline-primary btn-sm"
-            href="/contact">
-            join our club
+            href="/login">
+            member zone
           </a>
         </li>
       
@@ -798,9 +804,9 @@
       
       
         <a
-          href="/contact"
+          href="/login"
           class="btn btn-outline-primary btn-sm hidden lg:inline-block">
-          join our club
+          member zone
         </a>
       
     </div>
@@ -1073,7 +1079,7 @@
             <p>Colin Webber is an active member of the Cape Town chess community, balancing his own journey as an “adult improver” with his passion for supporting the game. A former chess parent—his son Ethan no longer plays competitively—Colin has stayed deeply connected to the sport through both playing and service. He currently serves as the Technical Officer and Webmaster of Steinitz Chess Club, where he helps manage the club’s digital presence and supports its ongoing growth. Alongside his technical contributions, Colin enjoys encouraging and mentoring young players, drawing on his experiences as both a parent and competitor. His enthusiasm for lifelong learning and his commitment to fostering talent make him a valuable part of the Steinitz family.</p>
 
           </div>
-          <ul class="social-icons ml-4 mt-10 text-center">
+          <ul class="social-icons ml-4 mt-10 text-center auth-only" style="display:none;">
             
               <li>
                 <a
@@ -1092,6 +1098,16 @@
                   rel="noopener nofollow">
                   <span class="sr-only"></span>
                   <i class="fa-solid fa-flag"></i>
+                </a>
+              </li>
+            
+              <li>
+                <a
+                  href="https://lichess.org/@/filmoh"
+                  target="_blank"
+                  rel="noopener nofollow">
+                  <span class="sr-only"></span>
+                  <i class="fa-solid fa-chess-knight"></i>
                 </a>
               </li>
             
@@ -1481,5 +1497,6 @@
 
 
 
+    <script src="/js/session.js"></script>
   </body>
 </html>
