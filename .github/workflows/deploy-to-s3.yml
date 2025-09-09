@@ -57,9 +57,21 @@ jobs:
           role-to-assume: arn:aws:iam::881490093474:role/SteinitzWebsite_S3Deployer # this will be the ARN of the role you created in the "Creating a Role for deployment" step.
           role-session-name: GithubActions-SteinitzWebsite
           mask-aws-account-id: true          
-      - name: "Sync to S3"
-        id: deployment
-        run: aws s3 sync ./ s3://${{ vars.BUCKET_NAME }} --delete --cache-control max-age=31536000
+      - name: "Sync HTML files with short cache"
+        run: |
+          aws s3 sync ./ s3://${{ vars.BUCKET_NAME }} \
+            --delete \
+            --exclude "*" \
+            --include "*.html" \
+            --cache-control "max-age=60, must-revalidate"
+
+      - name: "Sync other assets with long cache"
+        run: |
+          aws s3 sync ./ s3://${{ vars.BUCKET_NAME }} \
+            --delete \
+            --exclude "*.html" \
+            --cache-control "max-age=31536000, public, immutable"
+
       - name: "Cloudfront Invalidation"
         id: flushcache
         run: aws cloudfront create-invalidation --distribution-id ${{ vars.CF_DISTRIBUTION_ID }} --paths "/*"
