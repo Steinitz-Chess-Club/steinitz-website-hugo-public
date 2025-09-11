@@ -4,7 +4,7 @@
   class=""
   lang="en-us"
   itemtype="http://schema.org/WebPage">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
     
     <meta charset="utf-8" />
@@ -73,7 +73,7 @@
 
 
 
-  <base href="https://test.steinitzchessclub.co.za/gallery/" />
+  <base href="//localhost:1313/gallery/" />
 
 
 
@@ -161,8 +161,8 @@
       
       
       
-        <meta property="og:image" content="https://test.steinitzchessclub.co.za/images/og-image.png" />
-        <meta name="twitter:image" content="https://test.steinitzchessclub.co.za/images/og-image.png" />
+        <meta property="og:image" content="//localhost:1313/images/og-image.png" />
+        <meta name="twitter:image" content="//localhost:1313/images/og-image.png" />
         <meta
           name="twitter:card"
           content="summary_large_image" />
@@ -189,7 +189,7 @@
 <meta property="og:title" content="Steinitzians in action!" />
 <meta property="og:description" content="Photos of club members in action" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://test.steinitzchessclub.co.za/gallery/" />
+<meta property="og:url" content="//localhost:1313/gallery/" />
 
 
 <meta name="twitter:title" content="Steinitzians in action!" />
@@ -208,22 +208,6 @@
 
 
 
-  
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3ECKP96EL"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-B3ECKP96EL');
-        }
-      </script>
-
 
 
 
@@ -234,7 +218,7 @@
 
 
 <script>
-  let indexURL = "https://test.steinitzchessclub.co.za/searchindex.json";
+  let indexURL = "//localhost:1313/searchindex.json";
   let includeSectionsInSearch = ["blog"];
   let search_no_results = "No results for";
   let search_initial_message = "Type something to search..";
@@ -358,10 +342,6 @@
 
 
       
-        
-        
-        
-      
   </head>
 
   <body>
@@ -372,7 +352,17 @@
 
 
 
+
         
+        <div
+  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
+  <span class="block sm:hidden">all</span>
+  <span class="hidden sm:block md:hidden">sm</span>
+  <span class="hidden md:block lg:hidden">md</span>
+  <span class="hidden lg:block xl:hidden">lg</span>
+  <span class="hidden xl:block 2xl:hidden">xl</span>
+  <span class="hidden 2xl:block">2xl</span>
+</div>
 
     
 
@@ -619,6 +609,10 @@
                 
                 
                 
+              
+                
+                
+                
                inline-flex items-center">
               Our People
               <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
@@ -648,6 +642,17 @@
                     
                     href="/authors">
                     Our Authors
+                  </a>
+                </li>
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/coaches">
+                    Our Coaches
                   </a>
                 </li>
               
@@ -2086,7 +2091,7 @@
       <p>
           &copy;2025 Steinitz Chess Club
           
-        <p>This page was last modified on 31 Aug 2025</p>
+        <p>This page was last modified on 09 Sep 2025</p>
         
       </p>
     </div>

@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Steinitz Chess Club</title>
-    <link>https://test.steinitzchessclub.co.za/tags/</link>
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on Steinitz Chess Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Sep 2025 11:22:10 +0200</lastBuildDate>
-    <atom:link href="https://test.steinitzchessclub.co.za/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Sep 2025 13:15:07 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://test.steinitzchessclub.co.za/tags/about/</link>
+      <link>//localhost:1313/tags/about/</link>
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0200</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/about/</guid>
+      <guid>//localhost:1313/tags/about/</guid>
       <description></description>
     </item>
     <item>
       <title>Club</title>
-      <link>https://test.steinitzchessclub.co.za/tags/club/</link>
+      <link>//localhost:1313/tags/club/</link>
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0200</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/club/</guid>
+      <guid>//localhost:1313/tags/club/</guid>
       <description></description>
     </item>
     <item>
       <title>History</title>
-      <link>https://test.steinitzchessclub.co.za/tags/history/</link>
+      <link>//localhost:1313/tags/history/</link>
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0200</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/history/</guid>
+      <guid>//localhost:1313/tags/history/</guid>
       <description></description>
     </item>
     <item>
       <title>Calculation</title>
-      <link>https://test.steinitzchessclub.co.za/tags/calculation/</link>
+      <link>//localhost:1313/tags/calculation/</link>
       <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/calculation/</guid>
+      <guid>//localhost:1313/tags/calculation/</guid>
       <description></description>
     </item>
     <item>
       <title>Evalutation</title>
-      <link>https://test.steinitzchessclub.co.za/tags/evalutation/</link>
+      <link>//localhost:1313/tags/evalutation/</link>
       <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/evalutation/</guid>
+      <guid>//localhost:1313/tags/evalutation/</guid>
       <description></description>
     </item>
     <item>
       <title>Strategy</title>
-      <link>https://test.steinitzchessclub.co.za/tags/strategy/</link>
+      <link>//localhost:1313/tags/strategy/</link>
       <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/strategy/</guid>
+      <guid>//localhost:1313/tags/strategy/</guid>
       <description></description>
     </item>
     <item>
       <title>League</title>
-      <link>https://test.steinitzchessclub.co.za/tags/league/</link>
+      <link>//localhost:1313/tags/league/</link>
       <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/league/</guid>
+      <guid>//localhost:1313/tags/league/</guid>
       <description></description>
     </item>
     <item>
       <title>Tournament</title>
-      <link>https://test.steinitzchessclub.co.za/tags/tournament/</link>
+      <link>//localhost:1313/tags/tournament/</link>
       <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/tags/tournament/</guid>
+      <guid>//localhost:1313/tags/tournament/</guid>
       <description></description>
     </item>
   </channel>

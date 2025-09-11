@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Steinitz Chess Club</title>
-    <link>https://test.steinitzchessclub.co.za/tags/about/</link>
+    <link>//localhost:1313/tags/about/</link>
     <description>Recent content in About on Steinitz Chess Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Sep 2025 11:22:10 +0200</lastBuildDate>
-    <atom:link href="https://test.steinitzchessclub.co.za/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Sep 2025 13:15:07 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Our Story: From Modest Beginnings to Chess Legacy</title>
-      <link>https://test.steinitzchessclub.co.za/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0200</pubDate>
-      <guid>https://test.steinitzchessclub.co.za/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;humble-foundations-bonteheuwel-1976&#34;&gt;Humble Foundations: Bonteheuwel, 1976&lt;/h2&gt;&#xA;&lt;p&gt;The story of Steinitz Chess Club begins in 1976 at &lt;strong&gt;Spes Bona High School&lt;/strong&gt; in Bonteheuwel, on Cape Town’s Cape Flats. It was here that a group of friends—Roland Willenberg, Shaun Willenberg, Mark Lewis, and Andrew Talmarkes—discovered a shared passion for chess and decided to form a club. What started as a school-based initiative soon grew into something far larger: a gathering place where young minds could sharpen their skills, build friendships, and dream of competing beyond their neighborhood.&lt;/p&gt;</description>
     </item>
   </channel>
