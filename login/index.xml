@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Login on Steinitz Chess Club</title>
-    <link>//localhost:1313/login/</link>
+    <link>https://test.steinitzchessclub.co.za/login/</link>
     <description>Recent content in Login on Steinitz Chess Club</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:1313/login/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://test.steinitzchessclub.co.za/login/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -19,10 +19,13 @@ async function verifyUser(idToken, { persist = true } = {}) {
             userInfoEl.textContent = `✅ Login successful! Welcome, ${data.email}`;
             loginBtn.style.display = "none";
             logoutBtn.style.display = "inline-block";
+            console.log("ChessaID: " + data.chessaId);
 
             if (persist) {
                 // persist token + user info
                 localStorage.setItem("authUser", JSON.stringify({
+                    fideId: data.fideId,
+                    chessaId: data.chessaId,
                     token: idToken,
                     email: data.email,
                     authorized: true
