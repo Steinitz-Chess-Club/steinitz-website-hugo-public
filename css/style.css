@@ -194,6 +194,9 @@
   }
 }
 @layer utilities {
+  .\@container {
+    container-type: inline-size;
+  }
   .invisible {
     visibility: hidden;
   }
