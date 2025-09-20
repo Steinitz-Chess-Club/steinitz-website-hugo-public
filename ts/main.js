@@ -1506,9 +1506,9 @@
     }
   });
 
-  // node_modules/@popperjs/core/dist/cjs/popper.js
+  // ns-hugo-imp:/Users/colinw/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2@v2.21100.20000/package/dist/cjs/popper.js
   var require_popper = __commonJS({
-    "node_modules/@popperjs/core/dist/cjs/popper.js"(exports) {
+    "ns-hugo-imp:/Users/colinw/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2@v2.21100.20000/package/dist/cjs/popper.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
       function getWindow(node) {
@@ -1539,47 +1539,32 @@
       var max = Math.max;
       var min = Math.min;
       var round = Math.round;
-      function getUAString() {
-        var uaData = navigator.userAgentData;
-        if (uaData != null && uaData.brands && Array.isArray(uaData.brands)) {
-          return uaData.brands.map(function(item) {
-            return item.brand + "/" + item.version;
-          }).join(" ");
-        }
-        return navigator.userAgent;
-      }
-      function isLayoutViewport() {
-        return !/^((?!chrome|android).)*safari/i.test(getUAString());
-      }
-      function getBoundingClientRect(element, includeScale, isFixedStrategy) {
+      function getBoundingClientRect(element, includeScale) {
         if (includeScale === void 0) {
           includeScale = false;
         }
-        if (isFixedStrategy === void 0) {
-          isFixedStrategy = false;
-        }
-        var clientRect = element.getBoundingClientRect();
+        var rect = element.getBoundingClientRect();
         var scaleX = 1;
         var scaleY = 1;
-        if (includeScale && isHTMLElement(element)) {
-          scaleX = element.offsetWidth > 0 ? round(clientRect.width) / element.offsetWidth || 1 : 1;
-          scaleY = element.offsetHeight > 0 ? round(clientRect.height) / element.offsetHeight || 1 : 1;
+        if (isHTMLElement(element) && includeScale) {
+          var offsetHeight = element.offsetHeight;
+          var offsetWidth = element.offsetWidth;
+          if (offsetWidth > 0) {
+            scaleX = round(rect.width) / offsetWidth || 1;
+          }
+          if (offsetHeight > 0) {
+            scaleY = round(rect.height) / offsetHeight || 1;
+          }
         }
-        var _ref = isElement3(element) ? getWindow(element) : window, visualViewport = _ref.visualViewport;
-        var addVisualOffsets = !isLayoutViewport() && isFixedStrategy;
-        var x = (clientRect.left + (addVisualOffsets && visualViewport ? visualViewport.offsetLeft : 0)) / scaleX;
-        var y = (clientRect.top + (addVisualOffsets && visualViewport ? visualViewport.offsetTop : 0)) / scaleY;
-        var width = clientRect.width / scaleX;
-        var height = clientRect.height / scaleY;
         return {
-          width,
-          height,
-          top: y,
-          right: x + width,
-          bottom: y + height,
-          left: x,
-          x,
-          y
+          width: rect.width / scaleX,
+          height: rect.height / scaleY,
+          top: rect.top / scaleY,
+          right: rect.right / scaleX,
+          bottom: rect.bottom / scaleY,
+          left: rect.left / scaleX,
+          x: rect.left / scaleX,
+          y: rect.top / scaleY
         };
       }
       function getWindowScroll(node) {
@@ -1636,7 +1621,7 @@
         var isOffsetParentAnElement = isHTMLElement(offsetParent);
         var offsetParentIsScaled = isHTMLElement(offsetParent) && isElementScaled(offsetParent);
         var documentElement = getDocumentElement(offsetParent);
-        var rect = getBoundingClientRect(elementOrVirtualElement, offsetParentIsScaled, isFixed);
+        var rect = getBoundingClientRect(elementOrVirtualElement, offsetParentIsScaled);
         var scroll = {
           scrollLeft: 0,
           scrollTop: 0
@@ -1732,8 +1717,8 @@
         return element.offsetParent;
       }
       function getContainingBlock(element) {
-        var isFirefox = /firefox/i.test(getUAString());
-        var isIE = /Trident/i.test(getUAString());
+        var isFirefox = navigator.userAgent.toLowerCase().indexOf("firefox") !== -1;
+        var isIE = navigator.userAgent.indexOf("Trident") !== -1;
         if (isIE && isHTMLElement(element)) {
           var elementCss = getComputedStyle2(element);
           if (elementCss.position === "fixed") {
@@ -1741,9 +1726,6 @@
           }
         }
         var currentNode = getParentNode(element);
-        if (isShadowRoot(currentNode)) {
-          currentNode = currentNode.host;
-        }
         while (isHTMLElement(currentNode) && ["html", "body"].indexOf(getNodeName(currentNode)) < 0) {
           var css = getComputedStyle2(currentNode);
           if (css.transform !== "none" || css.perspective !== "none" || css.contain === "paint" || ["transform", "perspective"].indexOf(css.willChange) !== -1 || isFirefox && css.willChange === "filter" || isFirefox && css.filter && css.filter !== "none") {
@@ -1842,6 +1824,89 @@
           return pending;
         };
       }
+      function format(str) {
+        for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+          args[_key - 1] = arguments[_key];
+        }
+        return [].concat(args).reduce(function(p, c) {
+          return p.replace(/%s/, c);
+        }, str);
+      }
+      var INVALID_MODIFIER_ERROR = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s';
+      var MISSING_DEPENDENCY_ERROR = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available';
+      var VALID_PROPERTIES = ["name", "enabled", "phase", "fn", "effect", "requires", "options"];
+      function validateModifiers(modifiers) {
+        modifiers.forEach(function(modifier) {
+          [].concat(Object.keys(modifier), VALID_PROPERTIES).filter(function(value, index, self2) {
+            return self2.indexOf(value) === index;
+          }).forEach(function(key) {
+            switch (key) {
+              case "name":
+                if (typeof modifier.name !== "string") {
+                  console.error(format(INVALID_MODIFIER_ERROR, String(modifier.name), '"name"', '"string"', '"' + String(modifier.name) + '"'));
+                }
+                break;
+              case "enabled":
+                if (typeof modifier.enabled !== "boolean") {
+                  console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"enabled"', '"boolean"', '"' + String(modifier.enabled) + '"'));
+                }
+                break;
+              case "phase":
+                if (modifierPhases.indexOf(modifier.phase) < 0) {
+                  console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"phase"', "either " + modifierPhases.join(", "), '"' + String(modifier.phase) + '"'));
+                }
+                break;
+              case "fn":
+                if (typeof modifier.fn !== "function") {
+                  console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"fn"', '"function"', '"' + String(modifier.fn) + '"'));
+                }
+                break;
+              case "effect":
+                if (modifier.effect != null && typeof modifier.effect !== "function") {
+                  console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"effect"', '"function"', '"' + String(modifier.fn) + '"'));
+                }
+                break;
+              case "requires":
+                if (modifier.requires != null && !Array.isArray(modifier.requires)) {
+                  console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"requires"', '"array"', '"' + String(modifier.requires) + '"'));
+                }
+                break;
+              case "requiresIfExists":
+                if (!Array.isArray(modifier.requiresIfExists)) {
+                  console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"requiresIfExists"', '"array"', '"' + String(modifier.requiresIfExists) + '"'));
+                }
+                break;
+              case "options":
+              case "data":
+                break;
+              default:
+                console.error('PopperJS: an invalid property has been provided to the "' + modifier.name + '" modifier, valid properties are ' + VALID_PROPERTIES.map(function(s) {
+                  return '"' + s + '"';
+                }).join(", ") + '; but "' + key + '" was provided.');
+            }
+            modifier.requires && modifier.requires.forEach(function(requirement) {
+              if (modifiers.find(function(mod) {
+                return mod.name === requirement;
+              }) == null) {
+                console.error(format(MISSING_DEPENDENCY_ERROR, String(modifier.name), requirement, requirement));
+              }
+            });
+          });
+        });
+      }
+      function uniqueBy(arr, fn) {
+        var identifiers = /* @__PURE__ */ new Set();
+        return arr.filter(function(item) {
+          var identifier = fn(item);
+          if (!identifiers.has(identifier)) {
+            identifiers.add(identifier);
+            return true;
+          }
+        });
+      }
+      function getBasePlacement(placement) {
+        return placement.split("-")[0];
+      }
       function mergeByName(modifiers) {
         var merged = modifiers.reduce(function(merged2, current) {
           var existing = merged2[current.name];
@@ -1855,7 +1920,7 @@
           return merged[key];
         });
       }
-      function getViewportRect(element, strategy) {
+      function getViewportRect(element) {
         var win = getWindow(element);
         var html = getDocumentElement(element);
         var visualViewport = win.visualViewport;
@@ -1866,8 +1931,7 @@
         if (visualViewport) {
           width = visualViewport.width;
           height = visualViewport.height;
-          var layoutViewport = isLayoutViewport();
-          if (layoutViewport || !layoutViewport && strategy === "fixed") {
+          if (!/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
             x = visualViewport.offsetLeft;
             y = visualViewport.offsetTop;
           }
@@ -1921,8 +1985,8 @@
           bottom: rect.y + rect.height
         });
       }
-      function getInnerBoundingClientRect(element, strategy) {
-        var rect = getBoundingClientRect(element, false, strategy === "fixed");
+      function getInnerBoundingClientRect(element) {
+        var rect = getBoundingClientRect(element);
         rect.top = rect.top + element.clientTop;
         rect.left = rect.left + element.clientLeft;
         rect.bottom = rect.top + element.clientHeight;
@@ -1933,8 +1997,8 @@
         rect.y = rect.top;
         return rect;
       }
-      function getClientRectFromMixedType(element, clippingParent, strategy) {
-        return clippingParent === viewport ? rectToClientRect(getViewportRect(element, strategy)) : isElement3(clippingParent) ? getInnerBoundingClientRect(clippingParent, strategy) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
+      function getClientRectFromMixedType(element, clippingParent) {
+        return clippingParent === viewport ? rectToClientRect(getViewportRect(element)) : isElement3(clippingParent) ? getInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
       }
       function getClippingParents(element) {
         var clippingParents2 = listScrollParents(getParentNode(element));
@@ -1944,29 +2008,26 @@
           return [];
         }
         return clippingParents2.filter(function(clippingParent) {
-          return isElement3(clippingParent) && contains(clippingParent, clipperElement) && getNodeName(clippingParent) !== "body";
+          return isElement3(clippingParent) && contains(clippingParent, clipperElement) && getNodeName(clippingParent) !== "body" && (canEscapeClipping ? getComputedStyle2(clippingParent).position !== "static" : true);
         });
       }
-      function getClippingRect(element, boundary, rootBoundary, strategy) {
+      function getClippingRect(element, boundary, rootBoundary) {
         var mainClippingParents = boundary === "clippingParents" ? getClippingParents(element) : [].concat(boundary);
         var clippingParents2 = [].concat(mainClippingParents, [rootBoundary]);
         var firstClippingParent = clippingParents2[0];
         var clippingRect = clippingParents2.reduce(function(accRect, clippingParent) {
-          var rect = getClientRectFromMixedType(element, clippingParent, strategy);
+          var rect = getClientRectFromMixedType(element, clippingParent);
           accRect.top = max(rect.top, accRect.top);
           accRect.right = min(rect.right, accRect.right);
           accRect.bottom = min(rect.bottom, accRect.bottom);
           accRect.left = max(rect.left, accRect.left);
           return accRect;
-        }, getClientRectFromMixedType(element, firstClippingParent, strategy));
+        }, getClientRectFromMixedType(element, firstClippingParent));
         clippingRect.width = clippingRect.right - clippingRect.left;
         clippingRect.height = clippingRect.bottom - clippingRect.top;
         clippingRect.x = clippingRect.left;
         clippingRect.y = clippingRect.top;
         return clippingRect;
-      }
-      function getBasePlacement(placement) {
-        return placement.split("-")[0];
       }
       function getVariation(placement) {
         return placement.split("-")[1];
@@ -2047,12 +2108,12 @@
         if (options === void 0) {
           options = {};
         }
-        var _options = options, _options$placement = _options.placement, placement = _options$placement === void 0 ? state.placement : _options$placement, _options$strategy = _options.strategy, strategy = _options$strategy === void 0 ? state.strategy : _options$strategy, _options$boundary = _options.boundary, boundary = _options$boundary === void 0 ? clippingParents : _options$boundary, _options$rootBoundary = _options.rootBoundary, rootBoundary = _options$rootBoundary === void 0 ? viewport : _options$rootBoundary, _options$elementConte = _options.elementContext, elementContext = _options$elementConte === void 0 ? popper : _options$elementConte, _options$altBoundary = _options.altBoundary, altBoundary = _options$altBoundary === void 0 ? false : _options$altBoundary, _options$padding = _options.padding, padding = _options$padding === void 0 ? 0 : _options$padding;
+        var _options = options, _options$placement = _options.placement, placement = _options$placement === void 0 ? state.placement : _options$placement, _options$boundary = _options.boundary, boundary = _options$boundary === void 0 ? clippingParents : _options$boundary, _options$rootBoundary = _options.rootBoundary, rootBoundary = _options$rootBoundary === void 0 ? viewport : _options$rootBoundary, _options$elementConte = _options.elementContext, elementContext = _options$elementConte === void 0 ? popper : _options$elementConte, _options$altBoundary = _options.altBoundary, altBoundary = _options$altBoundary === void 0 ? false : _options$altBoundary, _options$padding = _options.padding, padding = _options$padding === void 0 ? 0 : _options$padding;
         var paddingObject = mergePaddingObject(typeof padding !== "number" ? padding : expandToHashMap(padding, basePlacements));
         var altContext = elementContext === popper ? reference : popper;
         var popperRect = state.rects.popper;
         var element = state.elements[altBoundary ? altContext : elementContext];
-        var clippingClientRect = getClippingRect(isElement3(element) ? element : element.contextElement || getDocumentElement(state.elements.popper), boundary, rootBoundary, strategy);
+        var clippingClientRect = getClippingRect(isElement3(element) ? element : element.contextElement || getDocumentElement(state.elements.popper), boundary, rootBoundary);
         var referenceClientRect = getBoundingClientRect(state.elements.reference);
         var popperOffsets2 = computeOffsets({
           reference: referenceClientRect,
@@ -2079,6 +2140,8 @@
         }
         return overflowOffsets;
       }
+      var INVALID_ELEMENT_ERROR = "Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.";
+      var INFINITE_LOOP_ERROR = "Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.";
       var DEFAULT_OPTIONS = {
         placement: "bottom",
         modifiers: [],
@@ -2129,6 +2192,28 @@
               state.orderedModifiers = orderedModifiers.filter(function(m) {
                 return m.enabled;
               });
+              if (true) {
+                var modifiers = uniqueBy([].concat(orderedModifiers, state.options.modifiers), function(_ref) {
+                  var name = _ref.name;
+                  return name;
+                });
+                validateModifiers(modifiers);
+                if (getBasePlacement(state.options.placement) === auto) {
+                  var flipModifier = state.orderedModifiers.find(function(_ref2) {
+                    var name = _ref2.name;
+                    return name === "flip";
+                  });
+                  if (!flipModifier) {
+                    console.error(['Popper: "auto" placements require the "flip" modifier be', "present and enabled to work."].join(" "));
+                  }
+                }
+                var _getComputedStyle = getComputedStyle2(popper2), marginTop = _getComputedStyle.marginTop, marginRight = _getComputedStyle.marginRight, marginBottom = _getComputedStyle.marginBottom, marginLeft = _getComputedStyle.marginLeft;
+                if ([marginTop, marginRight, marginBottom, marginLeft].some(function(margin) {
+                  return parseFloat(margin);
+                })) {
+                  console.warn(['Popper: CSS "margin" styles cannot be used to apply padding', "between the popper and its reference element or boundary.", "To replicate margin, use the `offset` modifier, as well as", "the `padding` option in the `preventOverflow` and `flip`", "modifiers."].join(" "));
+                }
+              }
               runModifierEffects();
               return instance.update();
             },
@@ -2143,6 +2228,9 @@
               }
               var _state$elements = state.elements, reference3 = _state$elements.reference, popper3 = _state$elements.popper;
               if (!areValidElements(reference3, popper3)) {
+                if (true) {
+                  console.error(INVALID_ELEMENT_ERROR);
+                }
                 return;
               }
               state.rects = {
@@ -2154,7 +2242,15 @@
               state.orderedModifiers.forEach(function(modifier) {
                 return state.modifiersData[modifier.name] = Object.assign({}, modifier.data);
               });
+              var __debug_loops__ = 0;
               for (var index = 0; index < state.orderedModifiers.length; index++) {
+                if (true) {
+                  __debug_loops__ += 1;
+                  if (__debug_loops__ > 100) {
+                    console.error(INFINITE_LOOP_ERROR);
+                    break;
+                  }
+                }
                 if (state.reset === true) {
                   state.reset = false;
                   index = -1;
@@ -2185,6 +2281,9 @@
             }
           };
           if (!areValidElements(reference2, popper2)) {
+            if (true) {
+              console.error(INVALID_ELEMENT_ERROR);
+            }
             return instance;
           }
           instance.setOptions(options).then(function(state2) {
@@ -2193,8 +2292,8 @@
             }
           });
           function runModifierEffects() {
-            state.orderedModifiers.forEach(function(_ref) {
-              var name = _ref.name, _ref$options = _ref.options, options2 = _ref$options === void 0 ? {} : _ref$options, effect2 = _ref.effect;
+            state.orderedModifiers.forEach(function(_ref3) {
+              var name = _ref3.name, _ref3$options = _ref3.options, options2 = _ref3$options === void 0 ? {} : _ref3$options, effect2 = _ref3.effect;
               if (typeof effect2 === "function") {
                 var cleanupFn = effect2({
                   state,
@@ -2275,8 +2374,9 @@
         bottom: "auto",
         left: "auto"
       };
-      function roundOffsetsByDPR(_ref, win) {
+      function roundOffsetsByDPR(_ref) {
         var x = _ref.x, y = _ref.y;
+        var win = window;
         var dpr = win.devicePixelRatio || 1;
         return {
           x: round(x * dpr) / dpr || 0,
@@ -2286,16 +2386,7 @@
       function mapToStyles(_ref2) {
         var _Object$assign2;
         var popper2 = _ref2.popper, popperRect = _ref2.popperRect, placement = _ref2.placement, variation = _ref2.variation, offsets = _ref2.offsets, position = _ref2.position, gpuAcceleration = _ref2.gpuAcceleration, adaptive = _ref2.adaptive, roundOffsets = _ref2.roundOffsets, isFixed = _ref2.isFixed;
-        var _offsets$x = offsets.x, x = _offsets$x === void 0 ? 0 : _offsets$x, _offsets$y = offsets.y, y = _offsets$y === void 0 ? 0 : _offsets$y;
-        var _ref3 = typeof roundOffsets === "function" ? roundOffsets({
-          x,
-          y
-        }) : {
-          x,
-          y
-        };
-        x = _ref3.x;
-        y = _ref3.y;
+        var _ref3 = roundOffsets === true ? roundOffsetsByDPR(offsets) : typeof roundOffsets === "function" ? roundOffsets(offsets) : offsets, _ref3$x = _ref3.x, x = _ref3$x === void 0 ? 0 : _ref3$x, _ref3$y = _ref3.y, y = _ref3$y === void 0 ? 0 : _ref3$y;
         var hasX = offsets.hasOwnProperty("x");
         var hasY = offsets.hasOwnProperty("y");
         var sideX = left;
@@ -2315,7 +2406,7 @@
           offsetParent = offsetParent;
           if (placement === top || (placement === left || placement === right) && variation === end3) {
             sideY = bottom;
-            var offsetY = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.height : (
+            var offsetY = isFixed && win.visualViewport ? win.visualViewport.height : (
               // $FlowFixMe[prop-missing]
               offsetParent[heightProp]
             );
@@ -2324,7 +2415,7 @@
           }
           if (placement === left || (placement === top || placement === bottom) && variation === end3) {
             sideX = right;
-            var offsetX = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.width : (
+            var offsetX = isFixed && win.visualViewport ? win.visualViewport.width : (
               // $FlowFixMe[prop-missing]
               offsetParent[widthProp]
             );
@@ -2335,24 +2426,23 @@
         var commonStyles = Object.assign({
           position
         }, adaptive && unsetSides);
-        var _ref4 = roundOffsets === true ? roundOffsetsByDPR({
-          x,
-          y
-        }, getWindow(popper2)) : {
-          x,
-          y
-        };
-        x = _ref4.x;
-        y = _ref4.y;
         if (gpuAcceleration) {
           var _Object$assign;
           return Object.assign({}, commonStyles, (_Object$assign = {}, _Object$assign[sideY] = hasY ? "0" : "", _Object$assign[sideX] = hasX ? "0" : "", _Object$assign.transform = (win.devicePixelRatio || 1) <= 1 ? "translate(" + x + "px, " + y + "px)" : "translate3d(" + x + "px, " + y + "px, 0)", _Object$assign));
         }
         return Object.assign({}, commonStyles, (_Object$assign2 = {}, _Object$assign2[sideY] = hasY ? y + "px" : "", _Object$assign2[sideX] = hasX ? x + "px" : "", _Object$assign2.transform = "", _Object$assign2));
       }
-      function computeStyles(_ref5) {
-        var state = _ref5.state, options = _ref5.options;
+      function computeStyles(_ref4) {
+        var state = _ref4.state, options = _ref4.options;
         var _options$gpuAccelerat = options.gpuAcceleration, gpuAcceleration = _options$gpuAccelerat === void 0 ? true : _options$gpuAccelerat, _options$adaptive = options.adaptive, adaptive = _options$adaptive === void 0 ? true : _options$adaptive, _options$roundOffsets = options.roundOffsets, roundOffsets = _options$roundOffsets === void 0 ? true : _options$roundOffsets;
+        if (true) {
+          var transitionProperty = getComputedStyle2(state.elements.popper).transitionProperty || "";
+          if (adaptive && ["transform", "top", "right", "bottom", "left"].some(function(property) {
+            return transitionProperty.indexOf(property) >= 0;
+          })) {
+            console.warn(["Popper: Detected CSS transitions on at least one of the following", 'CSS properties: "transform", "top", "right", "bottom", "left".', "\n\n", 'Disable the "computeStyles" modifier\'s `adaptive` option to allow', "for smooth transitions, or remove these properties from the CSS", "transition declaration on the popper element if only transitioning", "opacity or background-color for example.", "\n\n", "We recommend using the popper element as a wrapper around an inner", "element that can have any CSS property transitioned for animations."].join(" "));
+          }
+        }
         var commonStyles = {
           placement: getBasePlacement(state.placement),
           variation: getVariation(state.placement),
@@ -2525,6 +2615,9 @@
         });
         if (allowedPlacements.length === 0) {
           allowedPlacements = placements$1;
+          if (true) {
+            console.error(["Popper: The `allowedAutoPlacements` option did not allow any", "placements. Ensure the `placement` option matches the variation", "of the allowed placements.", 'For example, "auto" cannot be used to allow "bottom-start".', 'Use "auto-start" instead.'].join(" "));
+          }
         }
         var overflows = allowedPlacements.reduce(function(acc, placement2) {
           acc[placement2] = detectOverflow(state, {
@@ -2789,7 +2882,15 @@
             return;
           }
         }
+        if (true) {
+          if (!isHTMLElement(arrowElement)) {
+            console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', "To use an SVG arrow, wrap it in an HTMLElement that will be used as", "the arrow."].join(" "));
+          }
+        }
         if (!contains(state.elements.popper, arrowElement)) {
+          if (true) {
+            console.error(['Popper: "arrow" modifier\'s `element` must be a child of the popper', "element."].join(" "));
+          }
           return;
         }
         state.elements.arrow = arrowElement;
@@ -4874,7 +4975,7 @@
     });
     (0, import_page.default)("/logout", async (_) => {
       await ctrl.auth.logout();
-      location.href = BASE_PATH;
+      location.href = HOME_PATH;
     });
     (0, import_page.default)("/game/:id", (ctx) => {
       ctrl.openGame(ctx.params.id);
@@ -4883,6 +4984,7 @@
     (0, import_page.default)({ hashbang: true });
   }
   var BASE_PATH = location.pathname.replace(/\/$/, "");
+  var HOME_PATH = "/";
   var url = (path) => `${BASE_PATH}${path}`;
   var href = (path) => ({ href: url(path) });
 
@@ -6764,30 +6866,6 @@
     }
   };
 
-  // ns-hugo-imp:/Users/colinw/Code/steinitz-website-hugo-source/assets/ts/view/colorpicker.ts
-  function colorpicker() {
-    return h(
-      "li.nav-item.colorpicker",
-      h("input#colorpicker", {
-        attrs: {
-          type: "color",
-          value: localStorage.getItem("board.color") || defaultColor
-        },
-        on: {
-          input: (e) => setColor(e.target.value)
-        },
-        hook: {
-          insert: () => setColor(localStorage.getItem("board.color") || defaultColor)
-        }
-      })
-    );
-  }
-  var defaultColor = "#b37c23";
-  var setColor = (color) => {
-    document.body.style.setProperty("--board-color", color);
-    localStorage.setItem("board.color", color);
-  };
-
   // ns-hugo-imp:/Users/colinw/Code/steinitz-website-hugo-source/assets/ts/view/layout.ts
   function layout_default(ctrl, body) {
     return h("body", [renderNavBar(ctrl), h("div.container", body)]);
@@ -6797,9 +6875,9 @@
       h(
         "a.navbar-brand",
         {
-          attrs: href("/")
+          attrs: href("/logout")
         },
-        "Lichess API Demo"
+        "Home"
       ),
       h(
         "button.navbar-toggler",
@@ -6825,11 +6903,11 @@
                 class: { active: ctrl.page == "tv" },
                 attrs: href("/tv")
               },
-              "Watch TV"
+              "Club TV"
             )
           )
         ]),
-        h("ul.navbar-nav", [colorpicker(), ctrl.auth.me ? userNav(ctrl.auth.me) : anonNav()])
+        h("ul.navbar-nav", [ctrl.auth.me ? userNav(ctrl.auth.me) : anonNav()])
       ])
     ])
   ]);
