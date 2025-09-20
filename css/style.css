@@ -3592,13 +3592,6 @@ input#nav-toggle:checked ~ #nav-menu {
 .gallery-slider {
   margin-left: calc(var(--spacing) * 0) !important;
 }
-.crop-top {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-  display: block;
-}
 @layer base {
   [type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {
     appearance: none;
