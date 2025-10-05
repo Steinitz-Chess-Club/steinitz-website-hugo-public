@@ -5,7 +5,7 @@
     const payload = token.split(".")[1];
     return JSON.parse(atob(payload));
   }
-  async function handleCognitoCallback() {
+  async function handleCognitoCallback(clientId) {
     console.log("handleCognitoCallback");
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get("code");
@@ -15,7 +15,6 @@
       console.log("Code has already been used for authentication, ignoring");
     } else {
       localStorage.setItem("cognito_code", code);
-      const clientId = "52871fneuai6o4jnk8nrh7truo";
       const redirectUri = window.location.origin + "/callback/index.html";
       console.log(`redirectUri: ${redirectUri}`);
       const body = new URLSearchParams();
@@ -24,8 +23,7 @@
       body.append("code", code);
       body.append("redirect_uri", redirectUri);
       if (body) {
-        const response = await fetch("https://auth.steinitzchessclub.co.za/oauth2/token", {
-          // const response = await fetch("https://steinitzchessclub.auth.af-south-1.amazoncognito.com/oauth2/token", {
+        const response = await fetch("https://steinitzchessclub.auth.af-south-1.amazoncognito.com/oauth2/token", {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded"
