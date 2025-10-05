@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://test.steinitzchessclub.co.za/gallery/2025_royal-rapid-challenge/</loc>
+    <lastmod>2025-10-05T11:50:58+02:00</lastmod>
+  </url><url>
     <loc>https://test.steinitzchessclub.co.za/league-timeline/</loc>
     <lastmod>2025-09-27T13:29:56+02:00</lastmod>
   </url><url>
@@ -105,7 +108,7 @@
     <lastmod>2025-09-23T18:34:21+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/league-timeline/2025/</loc>
-    <lastmod>2025-09-27T13:29:56+02:00</lastmod>
+    <lastmod>2025-10-01T22:52:05+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/club/</loc>
     <lastmod>2025-09-19T21:44:06+02:00</lastmod>
@@ -114,22 +117,22 @@
     <lastmod>2025-09-21T22:39:46+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/tags/about/</loc>
-    <lastmod>2025-09-09T13:15:07+02:00</lastmod>
+    <lastmod>2025-10-01T22:52:05+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/tags/club/</loc>
-    <lastmod>2025-09-09T13:15:07+02:00</lastmod>
+    <lastmod>2025-10-01T22:52:05+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/tags/history/</loc>
-    <lastmod>2025-09-09T13:15:07+02:00</lastmod>
+    <lastmod>2025-10-01T22:52:05+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/about/</loc>
-    <lastmod>2025-09-09T13:15:07+02:00</lastmod>
+    <lastmod>2025-10-01T22:52:05+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/tags/</loc>
-    <lastmod>2025-09-09T13:15:07+02:00</lastmod>
+    <lastmod>2025-10-01T22:52:05+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/gallery/2025_ctcf-club-league/</loc>
-    <lastmod>2025-09-27T13:29:56+02:00</lastmod>
+    <lastmod>2025-10-01T22:52:05+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/gallery/2025_hermanus-chess-club-open/</loc>
     <lastmod>2025-09-03T11:34:43+02:00</lastmod>
@@ -192,7 +195,7 @@
     <lastmod>2025-09-09T13:15:07+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/</loc>
-    <lastmod>2025-09-09T13:15:07+02:00</lastmod>
+    <lastmod>2025-10-05T11:50:58+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/members/alex-akemdien/</loc>
     <lastmod>2025-09-22T12:11:24+02:00</lastmod>
@@ -220,6 +223,9 @@
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/blog/</loc>
     <lastmod>2025-09-09T13:15:07+02:00</lastmod>
+  </url><url>
+    <loc>https://test.steinitzchessclub.co.za/callback/</loc>
+    <lastmod>2025-10-05T11:50:58+02:00</lastmod>
   </url><url>
     <loc>https://test.steinitzchessclub.co.za/members/callum-lau/</loc>
     <lastmod>2025-09-22T12:11:24+02:00</lastmod>
