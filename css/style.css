@@ -1252,6 +1252,11 @@
       grid-column: 10;
     }
   }
+  .lg\:col-12 {
+    @media (width >= 64rem) {
+      grid-column: 12;
+    }
+  }
   .lg\:mt-0 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 0);
@@ -1321,6 +1326,12 @@
     @media (width >= 64rem) {
       flex: 0 0 auto;
       width: 83.33333333333334%;
+    }
+  }
+  .lg\:col-12 {
+    @media (width >= 64rem) {
+      flex: 0 0 auto;
+      width: 100%;
     }
   }
   .lg\:w-auto {
