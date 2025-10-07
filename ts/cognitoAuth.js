@@ -5,7 +5,7 @@
     const payload = token.split(".")[1];
     return JSON.parse(atob(payload));
   }
-  async function handleCognitoCallback(clientId) {
+  async function handleCognitoCallback(clientId, domain) {
     console.log("handleCognitoCallback");
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get("code");
@@ -23,7 +23,7 @@
       body.append("code", code);
       body.append("redirect_uri", redirectUri);
       if (body) {
-        const response = await fetch("https://steinitzchessclub.auth.af-south-1.amazoncognito.com/oauth2/token", {
+        const response = await fetch(`https://${domain}/oauth2/token`, {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded"
