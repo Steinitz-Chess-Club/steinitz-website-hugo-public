@@ -51,8 +51,7 @@
         if (!base64) return null;
         const payload = JSON.parse(atob(base64));
         console.log("User payload:", payload);
-        const user = new _User(payload);
-        return user;
+        return new _User(payload);
       } catch (err) {
         console.error("Invalid ID token:", err);
         return null;
@@ -61,6 +60,10 @@
   };
 
   // <stdin>
+  function setIdTokenCookie(idToken, expiresInSeconds) {
+    const maxAge = Math.floor(expiresInSeconds);
+    document.cookie = `id_token=${idToken}; Max-Age=${maxAge}; Path=/; Domain=.steinitzchessclub.co.za; Secure; SameSite=None`;
+  }
   async function handleCognitoCallback(clientId, domain) {
     console.log("handleCognitoCallback");
     const urlParams = new URLSearchParams(window.location.search);
@@ -90,6 +93,7 @@
       }
       const tokens2 = await response.json();
       localStorage.setItem("cognito_tokens", JSON.stringify(tokens2));
+      setIdTokenCookie(tokens2.id_token, tokens2.expires_in);
     }
     const tokens = JSON.parse(localStorage.getItem("cognito_tokens") || "{}");
     const user = User.fromIdToken(tokens.id_token);

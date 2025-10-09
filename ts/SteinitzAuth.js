@@ -51,8 +51,7 @@
         if (!base64) return null;
         const payload = JSON.parse(atob(base64));
         console.log("User payload:", payload);
-        const user = new _User(payload);
-        return user;
+        return new _User(payload);
       } catch (err) {
         console.error("Invalid ID token:", err);
         return null;
