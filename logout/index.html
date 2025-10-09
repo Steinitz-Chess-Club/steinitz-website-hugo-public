@@ -1,1 +1,1 @@
-<script>(function(){localStorage.removeItem("cognito_code"),localStorage.removeItem("cognito_tokens"),window.location.href="/",console.log("Logged out")})()</script>
+<div></div><script>(function(){localStorage.removeItem("cognito_code"),localStorage.removeItem("cognito_tokens");const e=sessionStorage.getItem("redirectAfterAuth");if(e){const t=decodeURIComponent(e);console.log("Redirecting to:",t),window.location.href=t}else console.log("Falling back to home page"),window.location.href="/";console.log("Logged out")})()</script>

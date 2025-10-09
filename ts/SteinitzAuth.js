@@ -121,7 +121,15 @@
       this.authBrowserBtn.href = this.logoutUrl;
       if (this.user && this.userPic) {
         this.userPic.src = this.user.picture || "https://www.gravatar.com/avatar/?d=mp";
+        if (this.user.isMember) {
+          this.userPic.addEventListener("click", () => {
+            this.navigateToUserPage();
+          });
+        }
       }
+    }
+    navigateToUserPage() {
+      window.location.href = `/members/${this.user.firstName.toLowerCase()}-${this.user.surname.toLowerCase()}/`;
     }
     showLoggedOut() {
       console.log("User is logged out:", this.user);
@@ -131,6 +139,9 @@
       this.authMobileBtn.href = this.loginUrl;
       this.authBrowserBtn.href = this.loginUrl;
       this.userPic.src = "https://www.gravatar.com/avatar/?d=mp";
+      this.userPic.removeEventListener("click", () => {
+        this.navigateToUserPage();
+      });
     }
     // --- Initialize ---
     init() {
