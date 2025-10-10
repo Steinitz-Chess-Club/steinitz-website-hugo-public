@@ -110,6 +110,7 @@
     clearTokens() {
       localStorage.removeItem("cognito_code");
       localStorage.removeItem("cognito_tokens");
+      document.cookie = "id_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
     // --- UI ---
     showLoggedIn() {
