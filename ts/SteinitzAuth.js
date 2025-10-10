@@ -110,7 +110,7 @@
     clearTokens() {
       localStorage.removeItem("cognito_code");
       localStorage.removeItem("cognito_tokens");
-      document.cookie = "id_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+      document.cookie = "id_token=; Max-Age=0; Path=/; Domain=.steinitzchessclub.co.za; Secure; SameSite=None";
     }
     // --- UI ---
     showLoggedIn() {
