@@ -39,9 +39,11 @@ jobs:
             exit 1
           fi
       - name: "Replace 'staging' Google tags with 'production' equivalents"
-        run: find . -type f -exec sed -i~ 's/B3ECKP96EL/DPHXLK5VEW/g' '{}' '+'
+        run: grep -Ilr '' . | xargs sed -i~ 's|B3ECKP96EL|DPHXLK5VEW|g'
       - name: "Replace 'staging' URL with 'production' equivalent"
-        run: find . -type f -exec sed -i~ 's/test\.steinitzchessclub\.co\.za/www.steinitzchessclub.co.za/g' '{}' '+'
+        run: grep -Ilr '' . | xargs sed -i~ 's|test.steinitzchessclub.co.za|www.steinitzchessclub.co.za|g'
+      - name: "Replace 'staging' login callback URL with 'production' equivalent"
+        run: grep -Ilr '' . | xargs sed -i~ 's|/auth/callback/test|/auth/callback/www|g'
       - name: "Allow indexing by search engines"
         run: find . -type f -name "robots.txt" -exec sed -i~ 's/Disallow:.*/Disallow:/g' {} '+'
       - name: "Remove ~ suffixed temp files created as part of the above SED operation."
