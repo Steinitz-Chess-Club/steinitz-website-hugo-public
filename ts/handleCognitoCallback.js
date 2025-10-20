@@ -1,7 +1,8 @@
+"use strict";
 (() => {
-  // <stdin>
+  // ../steinitz-common-source/src/api/handleCognitoCallback.ts
   async function handleCognitoCallback() {
-    console.log("handleCognitoCallback");
+    console.log("handleCognitoCallback!!");
     try {
       const response = await fetch("https://api.steinitzchessclub.co.za/auth/me", {
         method: "GET",
@@ -27,11 +28,12 @@
     if (redirectAfterAuth) {
       const decoded = decodeURIComponent(redirectAfterAuth);
       console.log("Redirecting to:", decoded);
-      window.location.href = decoded;
     } else {
       console.log("Falling back to home page");
-      window.location.href = "/";
     }
   }
+  window.handleCognitoCallback = handleCognitoCallback;
+
+  // <stdin>
   window.handleCognitoCallback = handleCognitoCallback;
 })();

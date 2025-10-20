@@ -1,18 +1,8 @@
+"use strict";
 (() => {
-  var __defProp = Object.defineProperty;
-  var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-  var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
-
-  // ns-hugo-imp:/Users/colinw/Code/steinitz-website-hugo-source/assets/ts/model/User.ts
-  var User = class _User {
+  // ../steinitz-common-source/src/model/CognitoUser.ts
+  var CognitoUser = class _CognitoUser {
     constructor(payload) {
-      __publicField(this, "sub");
-      __publicField(this, "firstName");
-      __publicField(this, "surname");
-      __publicField(this, "email");
-      __publicField(this, "_pictureUrl");
-      __publicField(this, "_pictureBase64");
-      __publicField(this, "groups");
       this.sub = payload.sub;
       this.firstName = payload["given_name"] || "";
       this.surname = payload["family_name"] || "";
@@ -20,7 +10,7 @@
       this._pictureUrl = payload.picture;
       this._pictureBase64 = payload.picture_base64;
       this.groups = payload["groups"] || [];
-      console.log("User payload:", payload);
+      console.log("CognitoUser payload:", payload);
       console.log("Groups:", this.groups);
       console.log("Profile pic URL:", this._pictureUrl);
       if (this._pictureBase64) console.log("Profile pic base64 included");
@@ -55,23 +45,23 @@
         isMember: this.isMember
       };
     }
-    /** Parses a JWT id_token and returns a User instance */
+    /** Parses a JWT id_token and returns a CognitoUser instance */
     static fromIdToken(idToken) {
       if (!idToken) return null;
       try {
         const base64 = idToken.split(".")[1];
         if (!base64) return null;
         const payload = JSON.parse(atob(base64));
-        return new _User(payload);
+        return new _CognitoUser(payload);
       } catch (err) {
         console.error("Invalid ID token:", err);
         return null;
       }
     }
-    /** Creates a User instance from stored session object (e.g., sessionStorage) */
+    /** Creates a CognitoUser instance from stored session object (e.g., sessionStorage) */
     static fromSessionObject(obj) {
       if (!obj) return null;
-      return new _User(obj);
+      return new _CognitoUser(obj);
     }
   };
 
@@ -82,16 +72,16 @@
       this.domain = domain;
       this.loginRedirectPath = loginRedirectPath;
       this.logoutRedirectPath = logoutRedirectPath;
-      __publicField(this, "apiBaseUrl", "https://api.steinitzchessclub.co.za");
-      __publicField(this, "user", null);
-      __publicField(this, "loginRedirectUri", `${this.apiBaseUrl}${this.loginRedirectPath}`);
-      __publicField(this, "logoutRedirectUri", `${window.location.origin}${this.logoutRedirectPath}`);
-      __publicField(this, "loginUrl", "");
-      __publicField(this, "logoutUrl", "");
+      this.apiBaseUrl = "https://api.steinitzchessclub.co.za";
+      this.user = null;
+      this.loginRedirectUri = `${this.apiBaseUrl}${this.loginRedirectPath}`;
+      this.logoutRedirectUri = `${window.location.origin}${this.logoutRedirectPath}`;
+      this.loginUrl = "";
+      this.logoutUrl = "";
       // --- DOM Elements ---
-      __publicField(this, "authMobileBtn", document.getElementById("auth-mobile-btn"));
-      __publicField(this, "authBrowserBtn", document.getElementById("auth-browser-btn"));
-      __publicField(this, "userPic", document.getElementById("user-pic"));
+      this.authMobileBtn = document.getElementById("auth-mobile-btn");
+      this.authBrowserBtn = document.getElementById("auth-browser-btn");
+      this.userPic = document.getElementById("user-pic");
     }
     // --- Public Getters ---
     get isLoggedIn() {
@@ -110,7 +100,7 @@
     // --- Session Storage ---
     getUserFromSession() {
       const userJson = sessionStorage.getItem("user");
-      return userJson ? User.fromSessionObject(JSON.parse(userJson)) : null;
+      return userJson ? CognitoUser.fromSessionObject(JSON.parse(userJson)) : null;
     }
     prepareLogout() {
       this.clearTokens();
