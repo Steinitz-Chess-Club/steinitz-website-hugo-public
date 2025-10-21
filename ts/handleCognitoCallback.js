@@ -2,7 +2,7 @@
 (() => {
   // ../steinitz-common-source/src/api/handleCognitoCallback.ts
   async function handleCognitoCallback() {
-    console.log("handleCognitoCallback!!");
+    console.log("handleCognitoCallback from common");
     try {
       const response = await fetch("https://api.steinitzchessclub.co.za/auth/me", {
         method: "GET",
