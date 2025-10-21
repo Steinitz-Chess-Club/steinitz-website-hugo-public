@@ -28,8 +28,10 @@
     if (redirectAfterAuth) {
       const decoded = decodeURIComponent(redirectAfterAuth);
       console.log("Redirecting to:", decoded);
+      window.location.href = decoded;
     } else {
       console.log("Falling back to home page");
+      window.location.href = "/";
     }
   }
   window.handleCognitoCallback = handleCognitoCallback;
