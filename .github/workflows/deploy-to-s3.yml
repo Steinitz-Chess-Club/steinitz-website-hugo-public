@@ -5,14 +5,14 @@ on:
   # Runs on 'git push', targeting the default branch
   push:
     branches: ["main"]
-    
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-  
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to S3
 permissions:
   contents: read
@@ -49,7 +49,7 @@ jobs:
       - name: "Remove ~ suffixed temp files created as part of the above SED operation."
         run: find . -name "*~" -exec rm {} +
       - name: Remove hidden files and dirs recursively
-        run: find . -name '.[a-zA-Z0-9]*' | xargs rm -fr 
+        run: find . -name '.[a-zA-Z0-9]*' | xargs rm -fr
       - name: "Remove other unneeded files"
         run: rm CNAME
       - name: "Configure AWS Credentials"
@@ -58,7 +58,7 @@ jobs:
           aws-region: ${{ vars.AWS_REGION }}
           role-to-assume: arn:aws:iam::881490093474:role/SteinitzWebsite_S3Deployer # this will be the ARN of the role you created in the "Creating a Role for deployment" step.
           role-session-name: GithubActions-SteinitzWebsite
-          mask-aws-account-id: true          
+          mask-aws-account-id: true
       - name: "Sync HTML files with short cache"
         run: |
           aws s3 sync ./ s3://${{ vars.BUCKET_NAME }} \
